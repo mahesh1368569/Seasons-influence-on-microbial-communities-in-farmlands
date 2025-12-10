@@ -1,0 +1,49 @@
+#Name	soil_type	Year	farm	replication	tillage	cover_crop	Crop_rotation	Season
+AS1	Bulk	2020	SCH	1	Min Till	CC-mix	Cotton-Soybean	Fall
+AS2	Bulk	2020	SCH	2	Min Till	CC-mix	Cotton-Soybean	Fall
+AS3	Bulk	2020	SCH	3	Min Till	CC-mix	Cotton-Soybean	Fall
+GR1	Bulk	2020	ROB	1	Min Till	CC-mix	Corn-Soybean	Fall
+GR2	Bulk	2020	ROB	2	Min Till	CC-mix	Corn-Soybean	Fall
+GR3	Bulk	2020	ROB	3	Min Till	CC-mix	Corn-Soybean	Fall
+MW1	Bulk	2020	WAL	1	Conv Till	no CC	Corn-Soybean	Fall
+MW2	Bulk	2020	WAL	2	Conv Till	no CC	Corn-Soybean	Fall
+MW3	Bulk	2020	WAL	3	Conv Till	no CC	Corn-Soybean	Fall
+NK1	Bulk	2020	KIN	1	Conv Till	no CC	Soybean-Corn	Fall
+NK2	Bulk	2020	KIN	2	Conv Till	no CC	Soybean-Corn	Fall
+NK3	Bulk	2020	KIN	3	Conv Till	no CC	Soybean-Corn	Fall
+NK4	Bulk	2020	KIN	4	Conv Till	no CC	Soybean-Corn	Fall
+NK5	Bulk	2020	KIN	5	Conv Till	no CC	Soybean-Corn	Fall
+NK6	Bulk	2020	KIN	6	Conv Till	no CC	Soybean-Corn	Fall
+RE1	Bulk	2020	EVA	1	Min Till	CC-mix	Soybean-Soybean	Fall
+RE2	Bulk	2020	EVA	2	Min Till	CC-mix	Soybean-Soybean	Fall
+RE3	Bulk	2020	EVA	3	Min Till	CC-mix	Soybean-Soybean	Fall
+TO1	Bulk	2020	OGL	1	Conv Till	no CC	Corn-Soybean	Fall
+TO2	Bulk	2020	OGL	2	Conv Till	no CC	Corn-Soybean	Fall
+TO3	Bulk	2020	OGL	3	Conv Till	no CC	Corn-Soybean	Fall
+WB1	Bulk	2020	BRE	1	Conv Till	no CC	Soybean-Soybean	Fall
+WB2	Bulk	2020	BRE	2	Conv Till	no CC	Soybean-Soybean	Fall
+WB3	Bulk	2020	BRE	3	Conv Till	no CC	Soybean-Soybean	Fall
+ASa	Bulk	2021	SCH	1	Min Till	CC-mix	Cotton-Soybean	Spring
+ASb	Bulk	2021	SCH	2	Min Till	CC-mix	Cotton-Soybean	Spring
+ASc	Bulk	2021	SCH	3	Min Till	CC-mix	Cotton-Soybean	Spring
+GRa	Bulk	2021	ROB	1	Min Till	CC-mix	Corn-Soybean	Spring
+GRb	Bulk	2021	ROB	2	Min Till	CC-mix	Corn-Soybean	Spring
+GRc	Bulk	2021	ROB	3	Min Till	CC-mix	Corn-Soybean	Spring
+MWa	Bulk	2021	WAL	1	Conv Till	no CC	Corn-Soybean	Spring
+MWb	Bulk	2021	WAL	2	Conv Till	no CC	Corn-Soybean	Spring
+MWc	Bulk	2021	WAL	3	Conv Till	no CC	Corn-Soybean	Spring
+NKa	Bulk	2021	KIN	1	Conv Till	no CC	Soybean-Corn	Spring
+NKb	Bulk	2021	KIN	2	Conv Till	no CC	Soybean-Corn	Spring
+NKc	Bulk	2021	KIN	3	Conv Till	no CC	Soybean-Corn	Spring
+NKd	Bulk	2021	KIN	4	Conv Till	no CC	Soybean-Corn	Spring
+NKe	Bulk	2021	KIN	5	Conv Till	no CC	Soybean-Corn	Spring
+NKf	Bulk	2021	KIN	6	Conv Till	no CC	Soybean-Corn	Spring
+REa	Bulk	2021	EVA	1	Min Till	CC-mix	Soybean-Soybean	Spring
+REb	Bulk	2021	EVA	2	Min Till	CC-mix	Soybean-Soybean	Spring
+REc	Bulk	2021	EVA	3	Min Till	CC-mix	Soybean-Soybean	Spring
+TOa	Bulk	2021	OGL	1	Conv Till	no CC	Corn-Soybean	Spring
+TOb	Bulk	2021	OGL	2	Conv Till	no CC	Corn-Soybean	Spring
+TOc	Bulk	2021	OGL	3	Conv Till	no CC	Corn-Soybean	Spring
+WBa	Bulk	2021	BRE	1	Conv Till	no CC	Soybean-Soybean	Spring
+WBb	Bulk	2021	BRE	2	Conv Till	no CC	Soybean-Soybean	Spring
+WBc	Bulk	2021	BRE	3	Conv Till	no CC	Soybean-Soybean	Spring
