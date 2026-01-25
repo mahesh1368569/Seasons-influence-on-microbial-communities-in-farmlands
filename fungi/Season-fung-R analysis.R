@@ -52,9 +52,9 @@ library(Hmisc)
 
 ##### Importing files ########
 
-biom = import_biom("Inputfiles/bacteria/season-16s.biom")
+biom = import_biom("Inputfiles/season-its.biom")
 
-metadata = import_qiime_sample_data("Inputfiles/bacteria/metadata.txt")
+metadata = import_qiime_sample_data("Inputfiles/metadata.txt")
 
 #tree = read_tree("Input_files/rooted_tree.nwk")
 
@@ -66,7 +66,7 @@ colnames(tax_table(season_biom)) <- c("Domain", "Phylum", "Class", "Order", "Fam
 
 meco_dataset <- phyloseq2meco(season_biom)
 
-soil <- read.csv("Inputfiles/bacteria/soil_data.csv")
+soil <- read.csv("Inputfiles/soil_data.csv")
 
 rownames(soil) <- soil[, 1]
 
@@ -117,11 +117,9 @@ ggsave("Output/PDFs/box_fig.pdf", plot = boxplot_season, width =11, height = 8, 
 genus_heat <- trans_abund$new(dataset = meco_dataset, taxrank = "Genus", ntaxa = 40)
 phylum_heat <- trans_abund$new(dataset = meco_dataset, taxrank = "Phylum", ntaxa = 40)
 
-phylum_fig_heat <- phylum_heat$plot_heatmap(facet = "Season", xtext_keep = FALSE, withmargin = FALSE, plot_breaks = c(0.01, 0.1, 1, 10))
-+ theme(axis.text.y = element_text(face = 'italic'))
+phylum_fig_heat <- phylum_heat$plot_heatmap(facet = "Season", xtext_keep = FALSE, withmargin = FALSE, plot_breaks = c(0.01, 0.1, 1, 10))+ theme(axis.text.y = element_text(face = 'italic'))
 
-genus_fig_heat <- genus_heat$plot_heatmap(facet = "Season", xtext_keep = FALSE, withmargin = FALSE, plot_breaks = c(0.01, 0.1, 1, 10))
-+ theme(axis.text.y = element_text(face = 'italic'))
+genus_fig_heat <- genus_heat$plot_heatmap(facet = "Season", xtext_keep = FALSE, withmargin = FALSE, plot_breaks = c(0.01, 0.1, 1, 10)) + theme(axis.text.y = element_text(face = 'italic'))
 
 genus_fig_heat
 phylum_fig_heat
@@ -131,9 +129,13 @@ ggsave("Output/PDFs/phylum_fig_heat.pdf", plot = phylum_fig_heat, width =8, heig
 
 ### Alpha diversity analaysis
 
+install.packages("agricolae")
+
+library(agricolae)
+
 alpha_S <- trans_alpha$new(dataset = meco_dataset, group = "Season")
 
-alpha_S$cal_diff(method = "wilcox")
+alpha_S$cal_diff(method = "t.test")
 
 plot_alpha_season  = alpha_S$plot_alpha(measure = "Chao1", add = 'jitter', shape = "Season")+
   theme_minimal() +
@@ -146,6 +148,8 @@ plot_alpha_season  = alpha_S$plot_alpha(measure = "Chao1", add = 'jitter', shape
         legend.title = element_text(size = 14),
         legend.text = element_text(size = 14),# Increase facet label size
         panel.border = element_rect(colour = "black", fill = NA, size = 1))
+
+plot_alpha_season
 
 ggsave("Output/PDFs/plot_alpha_season.pdf", plot = plot_alpha_season, width =6, height = 5, dpi = 1000)
 
@@ -306,7 +310,7 @@ Venn_plot$plot_venn()
 
 df_abundance <- trans_diff$new(dataset = meco_dataset, method = "lefse", group = "Season", alpha = 0.01, lefse_subgroup = NULL)
 
-df_abundance$plot_diff_bar(threshold = 6)
+df_abundance$plot_diff_bar(threshold = 5)
 # we show 20 taxa with the highest LDA (log10)
 
 df_bar_plot = df_abundance$plot_diff_bar(use_number = 1:30, width = 0.8)
@@ -318,3 +322,46 @@ df_abun_plot = df_abundance$plot_diff_abund(plot_type = "barerrorbar", use_numbe
 
 df_abun_plot
 ggsave("Output/PDFs/df_abun_plot.pdf", plot = df_abun_plot, width =7, height = 9, dpi = 1000)
+
+library(microeco)
+library(ggplot2)
+library(grid)
+
+## 1) Merge samples by Season (this keeps OTUs as rows)
+venn_mt <- meco_dataset$merge_samples("Season")
+
+## 2) Build venn object
+## For "OTU venn" (presence/feature counts), numratio is usually what you want
+Venn_plot <- trans_venn$new(dataset = venn_mt, ratio = "numratio")
+
+## 3) Patch microeco's internal theme to satisfy ggplot2's axis.title requirements
+Venn_plot$.__enclos_env__$private$main_theme <- theme(
+  panel.grid.major = element_blank(),
+  panel.grid.minor = element_blank(),
+  axis.text = element_blank(),
+  axis.ticks = element_blank(),
+  panel.border = element_blank(),
+  panel.background = element_blank(),
+  legend.key = element_blank(),
+  plot.margin = unit(c(0, 0, 0, 0), "mm"),
+  
+  # ---- critical fix ----
+  axis.title = element_text(),     # must be element_text for new ggplot2
+  axis.title.x = element_blank(),  # keep titles hidden
+  axis.title.y = element_blank()
+)
+
+## 4) Plot
+venn_fig <- Venn_plot$plot_venn(
+  fill_color = TRUE,
+  text_size = 5,
+  text_name_size = 6,
+  alpha = 0.35,
+  linesize = 1.1
+)
+
+venn_fig
+
+ggsave("Output/PDFs/venn_otus_season.pdf", plot = venn_fig, width = 7, height = 6, dpi = 1000)
+
+

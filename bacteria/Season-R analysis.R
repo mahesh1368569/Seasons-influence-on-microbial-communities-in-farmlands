@@ -318,3 +318,41 @@ df_abun_plot = df_abundance$plot_diff_abund(plot_type = "barerrorbar", use_numbe
 
 df_abun_plot
 ggsave("Output/PDFs/df_abun_plot.pdf", plot = df_abun_plot, width =7, height = 9, dpi = 1000)
+
+
+## 1) Merge samples by Season (this keeps OTUs as rows)
+venn_mt <- meco_dataset$merge_samples("Season")
+
+## 2) Build venn object
+## For "OTU venn" (presence/feature counts), numratio is usually what you want
+Venn_plot <- trans_venn$new(dataset = venn_mt, ratio = "numratio")
+
+## 3) Patch microeco's internal theme to satisfy ggplot2's axis.title requirements
+Venn_plot$.__enclos_env__$private$main_theme <- theme(
+  panel.grid.major = element_blank(),
+  panel.grid.minor = element_blank(),
+  axis.text = element_blank(),
+  axis.ticks = element_blank(),
+  panel.border = element_blank(),
+  panel.background = element_blank(),
+  legend.key = element_blank(),
+  plot.margin = unit(c(0, 0, 0, 0), "mm"),
+  
+  # ---- critical fix ----
+  axis.title = element_text(),     # must be element_text for new ggplot2
+  axis.title.x = element_blank(),  # keep titles hidden
+  axis.title.y = element_blank()
+)
+
+## 4) Plot
+venn_fig <- Venn_plot$plot_venn(
+  fill_color = TRUE,
+  text_size = 5,
+  text_name_size = 6,
+  alpha = 0.35,
+  linesize = 1.1
+)
+
+venn_fig
+
+ggsave("Output/PDFs/venn_otus_season.pdf", plot = venn_fig, width = 7, height = 6, dpi = 1000)
