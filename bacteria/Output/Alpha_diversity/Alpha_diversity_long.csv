@@ -1,0 +1,325 @@
+Sample,Measure,Value,X.Name,soil_type,Year,farm,replication,tillage,cover_crop,Crop_rotation,Season
+AS1,Observed,2632,AS1,Bulk,2020,SCH,1,Min Till,CC-mix,Cotton-Soybean,Fall
+AS2,Observed,2785,AS2,Bulk,2020,SCH,2,Min Till,CC-mix,Cotton-Soybean,Fall
+AS3,Observed,2695,AS3,Bulk,2020,SCH,3,Min Till,CC-mix,Cotton-Soybean,Fall
+ASa,Observed,162,ASa,Bulk,2021,SCH,1,Min Till,CC-mix,Cotton-Soybean,Spring
+ASb,Observed,169,ASb,Bulk,2021,SCH,2,Min Till,CC-mix,Cotton-Soybean,Spring
+ASc,Observed,121,ASc,Bulk,2021,SCH,3,Min Till,CC-mix,Cotton-Soybean,Spring
+GR1,Observed,2490,GR1,Bulk,2020,ROB,1,Min Till,CC-mix,Corn-Soybean,Fall
+GR2,Observed,2608,GR2,Bulk,2020,ROB,2,Min Till,CC-mix,Corn-Soybean,Fall
+GR3,Observed,1433,GR3,Bulk,2020,ROB,3,Min Till,CC-mix,Corn-Soybean,Fall
+GRa,Observed,168,GRa,Bulk,2021,ROB,1,Min Till,CC-mix,Corn-Soybean,Spring
+GRb,Observed,212,GRb,Bulk,2021,ROB,2,Min Till,CC-mix,Corn-Soybean,Spring
+GRc,Observed,425,GRc,Bulk,2021,ROB,3,Min Till,CC-mix,Corn-Soybean,Spring
+NK3,Observed,2821,NK3,Bulk,2020,KIN,3,Conv Till,no CC,Soybean-Corn,Fall
+NK4,Observed,3300,NK4,Bulk,2020,KIN,4,Conv Till,no CC,Soybean-Corn,Fall
+NK5,Observed,3247,NK5,Bulk,2020,KIN,5,Conv Till,no CC,Soybean-Corn,Fall
+NKc,Observed,208,NKc,Bulk,2021,KIN,3,Conv Till,no CC,Soybean-Corn,Spring
+NKd,Observed,127,NKd,Bulk,2021,KIN,4,Conv Till,no CC,Soybean-Corn,Spring
+NKe,Observed,97,NKe,Bulk,2021,KIN,5,Conv Till,no CC,Soybean-Corn,Spring
+RE1,Observed,3183,RE1,Bulk,2020,EVA,1,Min Till,CC-mix,Soybean-Soybean,Fall
+RE2,Observed,3055,RE2,Bulk,2020,EVA,2,Min Till,CC-mix,Soybean-Soybean,Fall
+RE3,Observed,3054,RE3,Bulk,2020,EVA,3,Min Till,CC-mix,Soybean-Soybean,Fall
+REa,Observed,252,REa,Bulk,2021,EVA,1,Min Till,CC-mix,Soybean-Soybean,Spring
+REb,Observed,168,REb,Bulk,2021,EVA,2,Min Till,CC-mix,Soybean-Soybean,Spring
+REc,Observed,245,REc,Bulk,2021,EVA,3,Min Till,CC-mix,Soybean-Soybean,Spring
+TO1,Observed,3119,TO1,Bulk,2020,OGL,1,Conv Till,no CC,Corn-Soybean,Fall
+TO2,Observed,3151,TO2,Bulk,2020,OGL,2,Conv Till,no CC,Corn-Soybean,Fall
+TO3,Observed,2841,TO3,Bulk,2020,OGL,3,Conv Till,no CC,Corn-Soybean,Fall
+TOa,Observed,136,TOa,Bulk,2021,OGL,1,Conv Till,no CC,Corn-Soybean,Spring
+TOb,Observed,281,TOb,Bulk,2021,OGL,2,Conv Till,no CC,Corn-Soybean,Spring
+TOc,Observed,142,TOc,Bulk,2021,OGL,3,Conv Till,no CC,Corn-Soybean,Spring
+WB1,Observed,2962,WB1,Bulk,2020,BRE,1,Conv Till,no CC,Soybean-Soybean,Fall
+WB2,Observed,3000,WB2,Bulk,2020,BRE,2,Conv Till,no CC,Soybean-Soybean,Fall
+WB3,Observed,2957,WB3,Bulk,2020,BRE,3,Conv Till,no CC,Soybean-Soybean,Fall
+WBa,Observed,145,WBa,Bulk,2021,BRE,1,Conv Till,no CC,Soybean-Soybean,Spring
+WBb,Observed,113,WBb,Bulk,2021,BRE,2,Conv Till,no CC,Soybean-Soybean,Spring
+WBc,Observed,167,WBc,Bulk,2021,BRE,3,Conv Till,no CC,Soybean-Soybean,Spring
+AS1,Chao1,2635.028846153846,AS1,Bulk,2020,SCH,1,Min Till,CC-mix,Cotton-Soybean,Fall
+AS2,Chao1,2788.0550458715597,AS2,Bulk,2020,SCH,2,Min Till,CC-mix,Cotton-Soybean,Fall
+AS3,Chao1,2698.31914893617,AS3,Bulk,2020,SCH,3,Min Till,CC-mix,Cotton-Soybean,Fall
+ASa,Chao1,162,ASa,Bulk,2021,SCH,1,Min Till,CC-mix,Cotton-Soybean,Spring
+ASb,Chao1,169,ASb,Bulk,2021,SCH,2,Min Till,CC-mix,Cotton-Soybean,Spring
+ASc,Chao1,121,ASc,Bulk,2021,SCH,3,Min Till,CC-mix,Cotton-Soybean,Spring
+GR1,Chao1,2494.9293680297396,GR1,Bulk,2020,ROB,1,Min Till,CC-mix,Corn-Soybean,Fall
+GR2,Chao1,2611.3636363636365,GR2,Bulk,2020,ROB,2,Min Till,CC-mix,Corn-Soybean,Fall
+GR3,Chao1,1433.5978260869565,GR3,Bulk,2020,ROB,3,Min Till,CC-mix,Corn-Soybean,Fall
+GRa,Chao1,168.5,GRa,Bulk,2021,ROB,1,Min Till,CC-mix,Corn-Soybean,Spring
+GRb,Chao1,212,GRb,Bulk,2021,ROB,2,Min Till,CC-mix,Corn-Soybean,Spring
+GRc,Chao1,425,GRc,Bulk,2021,ROB,3,Min Till,CC-mix,Corn-Soybean,Spring
+NK3,Chao1,2827.8205128205127,NK3,Bulk,2020,KIN,3,Conv Till,no CC,Soybean-Corn,Fall
+NK4,Chao1,3309.7695167286247,NK4,Bulk,2020,KIN,4,Conv Till,no CC,Soybean-Corn,Fall
+NK5,Chao1,3259.592105263158,NK5,Bulk,2020,KIN,5,Conv Till,no CC,Soybean-Corn,Fall
+NKc,Chao1,208,NKc,Bulk,2021,KIN,3,Conv Till,no CC,Soybean-Corn,Spring
+NKd,Chao1,127,NKd,Bulk,2021,KIN,4,Conv Till,no CC,Soybean-Corn,Spring
+NKe,Chao1,97,NKe,Bulk,2021,KIN,5,Conv Till,no CC,Soybean-Corn,Spring
+RE1,Chao1,3189.6090425531916,RE1,Bulk,2020,EVA,1,Min Till,CC-mix,Soybean-Soybean,Fall
+RE2,Chao1,3062.519230769231,RE2,Bulk,2020,EVA,2,Min Till,CC-mix,Soybean-Soybean,Fall
+RE3,Chao1,3060.058510638298,RE3,Bulk,2020,EVA,3,Min Till,CC-mix,Soybean-Soybean,Fall
+REa,Chao1,252,REa,Bulk,2021,EVA,1,Min Till,CC-mix,Soybean-Soybean,Spring
+REb,Chao1,168,REb,Bulk,2021,EVA,2,Min Till,CC-mix,Soybean-Soybean,Spring
+REc,Chao1,245,REc,Bulk,2021,EVA,3,Min Till,CC-mix,Soybean-Soybean,Spring
+TO1,Chao1,3124.945945945946,TO1,Bulk,2020,OGL,1,Conv Till,no CC,Corn-Soybean,Fall
+TO2,Chao1,3156.595988538682,TO2,Bulk,2020,OGL,2,Conv Till,no CC,Corn-Soybean,Fall
+TO3,Chao1,2849.2422535211267,TO3,Bulk,2020,OGL,3,Conv Till,no CC,Corn-Soybean,Fall
+TOa,Chao1,136,TOa,Bulk,2021,OGL,1,Conv Till,no CC,Corn-Soybean,Spring
+TOb,Chao1,281,TOb,Bulk,2021,OGL,2,Conv Till,no CC,Corn-Soybean,Spring
+TOc,Chao1,142,TOc,Bulk,2021,OGL,3,Conv Till,no CC,Corn-Soybean,Spring
+WB1,Chao1,2965.8333333333335,WB1,Bulk,2020,BRE,1,Conv Till,no CC,Soybean-Soybean,Fall
+WB2,Chao1,3003.8643533123027,WB2,Bulk,2020,BRE,2,Conv Till,no CC,Soybean-Soybean,Fall
+WB3,Chao1,2962.2808641975307,WB3,Bulk,2020,BRE,3,Conv Till,no CC,Soybean-Soybean,Fall
+WBa,Chao1,145,WBa,Bulk,2021,BRE,1,Conv Till,no CC,Soybean-Soybean,Spring
+WBb,Chao1,113,WBb,Bulk,2021,BRE,2,Conv Till,no CC,Soybean-Soybean,Spring
+WBc,Chao1,167,WBc,Bulk,2021,BRE,3,Conv Till,no CC,Soybean-Soybean,Spring
+AS1,ACE,2645.2839307769696,AS1,Bulk,2020,SCH,1,Min Till,CC-mix,Cotton-Soybean,Fall
+AS2,ACE,2798.1705715869093,AS2,Bulk,2020,SCH,2,Min Till,CC-mix,Cotton-Soybean,Fall
+AS3,ACE,2709.623130557361,AS3,Bulk,2020,SCH,3,Min Till,CC-mix,Cotton-Soybean,Fall
+ASa,ACE,162,ASa,Bulk,2021,SCH,1,Min Till,CC-mix,Cotton-Soybean,Spring
+ASb,ACE,169.15,ASb,Bulk,2021,SCH,2,Min Till,CC-mix,Cotton-Soybean,Spring
+ASc,ACE,121,ASc,Bulk,2021,SCH,3,Min Till,CC-mix,Cotton-Soybean,Spring
+GR1,ACE,2511.706932134401,GR1,Bulk,2020,ROB,1,Min Till,CC-mix,Corn-Soybean,Fall
+GR2,ACE,2621.05966530004,GR2,Bulk,2020,ROB,2,Min Till,CC-mix,Corn-Soybean,Fall
+GR3,ACE,1436.7358613663837,GR3,Bulk,2020,ROB,3,Min Till,CC-mix,Corn-Soybean,Fall
+GRa,ACE,168.6603320676048,GRa,Bulk,2021,ROB,1,Min Till,CC-mix,Corn-Soybean,Spring
+GRb,ACE,212,GRb,Bulk,2021,ROB,2,Min Till,CC-mix,Corn-Soybean,Spring
+GRc,ACE,425,GRc,Bulk,2021,ROB,3,Min Till,CC-mix,Corn-Soybean,Spring
+NK3,ACE,2843.1627540643317,NK3,Bulk,2020,KIN,3,Conv Till,no CC,Soybean-Corn,Fall
+NK4,ACE,3329.185454524423,NK4,Bulk,2020,KIN,4,Conv Till,no CC,Soybean-Corn,Fall
+NK5,ACE,3283.94115529033,NK5,Bulk,2020,KIN,5,Conv Till,no CC,Soybean-Corn,Fall
+NKc,ACE,208,NKc,Bulk,2021,KIN,3,Conv Till,no CC,Soybean-Corn,Spring
+NKd,ACE,127,NKd,Bulk,2021,KIN,4,Conv Till,no CC,Soybean-Corn,Spring
+NKe,ACE,97,NKe,Bulk,2021,KIN,5,Conv Till,no CC,Soybean-Corn,Spring
+RE1,ACE,3210.8991134160256,RE1,Bulk,2020,EVA,1,Min Till,CC-mix,Soybean-Soybean,Fall
+RE2,ACE,3082.6483326202774,RE2,Bulk,2020,EVA,2,Min Till,CC-mix,Soybean-Soybean,Fall
+RE3,ACE,3082.6289702602508,RE3,Bulk,2020,EVA,3,Min Till,CC-mix,Soybean-Soybean,Fall
+REa,ACE,252,REa,Bulk,2021,EVA,1,Min Till,CC-mix,Soybean-Soybean,Spring
+REb,ACE,168,REb,Bulk,2021,EVA,2,Min Till,CC-mix,Soybean-Soybean,Spring
+REc,ACE,245,REc,Bulk,2021,EVA,3,Min Till,CC-mix,Soybean-Soybean,Spring
+TO1,ACE,3139.5094814245545,TO1,Bulk,2020,OGL,1,Conv Till,no CC,Corn-Soybean,Fall
+TO2,ACE,3175.8284422850156,TO2,Bulk,2020,OGL,2,Conv Till,no CC,Corn-Soybean,Fall
+TO3,ACE,2873.5371778379576,TO3,Bulk,2020,OGL,3,Conv Till,no CC,Corn-Soybean,Fall
+TOa,ACE,136,TOa,Bulk,2021,OGL,1,Conv Till,no CC,Corn-Soybean,Spring
+TOb,ACE,281,TOb,Bulk,2021,OGL,2,Conv Till,no CC,Corn-Soybean,Spring
+TOc,ACE,142,TOc,Bulk,2021,OGL,3,Conv Till,no CC,Corn-Soybean,Spring
+WB1,ACE,2979.7996366413695,WB1,Bulk,2020,BRE,1,Conv Till,no CC,Soybean-Soybean,Fall
+WB2,ACE,3019.808263762038,WB2,Bulk,2020,BRE,2,Conv Till,no CC,Soybean-Soybean,Fall
+WB3,ACE,2980.5903907267125,WB3,Bulk,2020,BRE,3,Conv Till,no CC,Soybean-Soybean,Fall
+WBa,ACE,145,WBa,Bulk,2021,BRE,1,Conv Till,no CC,Soybean-Soybean,Spring
+WBb,ACE,113,WBb,Bulk,2021,BRE,2,Conv Till,no CC,Soybean-Soybean,Spring
+WBc,ACE,167,WBc,Bulk,2021,BRE,3,Conv Till,no CC,Soybean-Soybean,Spring
+AS1,Shannon,7.350293454554058,AS1,Bulk,2020,SCH,1,Min Till,CC-mix,Cotton-Soybean,Fall
+AS2,Shannon,7.43441721708211,AS2,Bulk,2020,SCH,2,Min Till,CC-mix,Cotton-Soybean,Fall
+AS3,Shannon,7.341110406037009,AS3,Bulk,2020,SCH,3,Min Till,CC-mix,Cotton-Soybean,Fall
+ASa,Shannon,4.858268675362494,ASa,Bulk,2021,SCH,1,Min Till,CC-mix,Cotton-Soybean,Spring
+ASb,Shannon,4.865838183176577,ASb,Bulk,2021,SCH,2,Min Till,CC-mix,Cotton-Soybean,Spring
+ASc,Shannon,4.534021282253323,ASc,Bulk,2021,SCH,3,Min Till,CC-mix,Cotton-Soybean,Spring
+GR1,Shannon,7.137661121357505,GR1,Bulk,2020,ROB,1,Min Till,CC-mix,Corn-Soybean,Fall
+GR2,Shannon,7.378703841049929,GR2,Bulk,2020,ROB,2,Min Till,CC-mix,Corn-Soybean,Fall
+GR3,Shannon,6.812082367139576,GR3,Bulk,2020,ROB,3,Min Till,CC-mix,Corn-Soybean,Fall
+GRa,Shannon,4.832255612186053,GRa,Bulk,2021,ROB,1,Min Till,CC-mix,Corn-Soybean,Spring
+GRb,Shannon,5.138523613724563,GRb,Bulk,2021,ROB,2,Min Till,CC-mix,Corn-Soybean,Spring
+GRc,Shannon,5.744363595805338,GRc,Bulk,2021,ROB,3,Min Till,CC-mix,Corn-Soybean,Spring
+NK3,Shannon,7.477281734755322,NK3,Bulk,2020,KIN,3,Conv Till,no CC,Soybean-Corn,Fall
+NK4,Shannon,7.5983630900312695,NK4,Bulk,2020,KIN,4,Conv Till,no CC,Soybean-Corn,Fall
+NK5,Shannon,7.61484543511287,NK5,Bulk,2020,KIN,5,Conv Till,no CC,Soybean-Corn,Fall
+NKc,Shannon,5.115577074615804,NKc,Bulk,2021,KIN,3,Conv Till,no CC,Soybean-Corn,Spring
+NKd,Shannon,4.622516768492219,NKd,Bulk,2021,KIN,4,Conv Till,no CC,Soybean-Corn,Spring
+NKe,Shannon,4.3759977870945095,NKe,Bulk,2021,KIN,5,Conv Till,no CC,Soybean-Corn,Spring
+RE1,Shannon,7.585009620811386,RE1,Bulk,2020,EVA,1,Min Till,CC-mix,Soybean-Soybean,Fall
+RE2,Shannon,7.606875455294212,RE2,Bulk,2020,EVA,2,Min Till,CC-mix,Soybean-Soybean,Fall
+RE3,Shannon,7.566293040641056,RE3,Bulk,2020,EVA,3,Min Till,CC-mix,Soybean-Soybean,Fall
+REa,Shannon,5.247669780115878,REa,Bulk,2021,EVA,1,Min Till,CC-mix,Soybean-Soybean,Spring
+REb,Shannon,4.87122073604129,REb,Bulk,2021,EVA,2,Min Till,CC-mix,Soybean-Soybean,Spring
+REc,Shannon,5.280852939582698,REc,Bulk,2021,EVA,3,Min Till,CC-mix,Soybean-Soybean,Spring
+TO1,Shannon,7.550973001823847,TO1,Bulk,2020,OGL,1,Conv Till,no CC,Corn-Soybean,Fall
+TO2,Shannon,7.56214769361553,TO2,Bulk,2020,OGL,2,Conv Till,no CC,Corn-Soybean,Fall
+TO3,Shannon,7.082151181552446,TO3,Bulk,2020,OGL,3,Conv Till,no CC,Corn-Soybean,Fall
+TOa,Shannon,4.632949195972705,TOa,Bulk,2021,OGL,1,Conv Till,no CC,Corn-Soybean,Spring
+TOb,Shannon,5.3524210418001354,TOb,Bulk,2021,OGL,2,Conv Till,no CC,Corn-Soybean,Spring
+TOc,Shannon,4.723201762981149,TOc,Bulk,2021,OGL,3,Conv Till,no CC,Corn-Soybean,Spring
+WB1,Shannon,7.464549403851156,WB1,Bulk,2020,BRE,1,Conv Till,no CC,Soybean-Soybean,Fall
+WB2,Shannon,7.542349192916295,WB2,Bulk,2020,BRE,2,Conv Till,no CC,Soybean-Soybean,Fall
+WB3,Shannon,7.536582582241177,WB3,Bulk,2020,BRE,3,Conv Till,no CC,Soybean-Soybean,Fall
+WBa,Shannon,4.748892019192336,WBa,Bulk,2021,BRE,1,Conv Till,no CC,Soybean-Soybean,Spring
+WBb,Shannon,4.467645412416865,WBb,Bulk,2021,BRE,2,Conv Till,no CC,Soybean-Soybean,Spring
+WBc,Shannon,4.92208211105246,WBc,Bulk,2021,BRE,3,Conv Till,no CC,Soybean-Soybean,Spring
+AS1,Simpson,0.9988733691087905,AS1,Bulk,2020,SCH,1,Min Till,CC-mix,Cotton-Soybean,Fall
+AS2,Simpson,0.999032281877931,AS2,Bulk,2020,SCH,2,Min Till,CC-mix,Cotton-Soybean,Fall
+AS3,Simpson,0.9986979876927127,AS3,Bulk,2020,SCH,3,Min Till,CC-mix,Cotton-Soybean,Fall
+ASa,Simpson,0.9907723188947053,ASa,Bulk,2021,SCH,1,Min Till,CC-mix,Cotton-Soybean,Spring
+ASb,Simpson,0.9905079002773924,ASb,Bulk,2021,SCH,2,Min Till,CC-mix,Cotton-Soybean,Spring
+ASc,Simpson,0.9866954223252485,ASc,Bulk,2021,SCH,3,Min Till,CC-mix,Cotton-Soybean,Spring
+GR1,Simpson,0.9975101001213803,GR1,Bulk,2020,ROB,1,Min Till,CC-mix,Corn-Soybean,Fall
+GR2,Simpson,0.9989641119847023,GR2,Bulk,2020,ROB,2,Min Till,CC-mix,Corn-Soybean,Fall
+GR3,Simpson,0.9981066631747241,GR3,Bulk,2020,ROB,3,Min Till,CC-mix,Corn-Soybean,Fall
+GRa,Simpson,0.9895949488584485,GRa,Bulk,2021,ROB,1,Min Till,CC-mix,Corn-Soybean,Spring
+GRb,Simpson,0.9930956055366587,GRb,Bulk,2021,ROB,2,Min Till,CC-mix,Corn-Soybean,Spring
+GRc,Simpson,0.9954782485411409,GRc,Bulk,2021,ROB,3,Min Till,CC-mix,Corn-Soybean,Spring
+NK3,Simpson,0.999125316578942,NK3,Bulk,2020,KIN,3,Conv Till,no CC,Soybean-Corn,Fall
+NK4,Simpson,0.9991947903452248,NK4,Bulk,2020,KIN,4,Conv Till,no CC,Soybean-Corn,Fall
+NK5,Simpson,0.9992704413935013,NK5,Bulk,2020,KIN,5,Conv Till,no CC,Soybean-Corn,Fall
+NKc,Simpson,0.992809754816711,NKc,Bulk,2021,KIN,3,Conv Till,no CC,Soybean-Corn,Spring
+NKd,Simpson,0.9883602606772612,NKd,Bulk,2021,KIN,4,Conv Till,no CC,Soybean-Corn,Spring
+NKe,Simpson,0.9854945589288584,NKe,Bulk,2021,KIN,5,Conv Till,no CC,Soybean-Corn,Spring
+RE1,Simpson,0.9992165266196057,RE1,Bulk,2020,EVA,1,Min Till,CC-mix,Soybean-Soybean,Fall
+RE2,Simpson,0.9992884040462068,RE2,Bulk,2020,EVA,2,Min Till,CC-mix,Soybean-Soybean,Fall
+RE3,Simpson,0.9992501650785561,RE3,Bulk,2020,EVA,3,Min Till,CC-mix,Soybean-Soybean,Fall
+REa,Simpson,0.9932422275386086,REa,Bulk,2021,EVA,1,Min Till,CC-mix,Soybean-Soybean,Spring
+REb,Simpson,0.9905091043919658,REb,Bulk,2021,EVA,2,Min Till,CC-mix,Soybean-Soybean,Spring
+REc,Simpson,0.9938581474762374,REc,Bulk,2021,EVA,3,Min Till,CC-mix,Soybean-Soybean,Spring
+TO1,Simpson,0.9991177199043949,TO1,Bulk,2020,OGL,1,Conv Till,no CC,Corn-Soybean,Fall
+TO2,Simpson,0.999110517298617,TO2,Bulk,2020,OGL,2,Conv Till,no CC,Corn-Soybean,Fall
+TO3,Simpson,0.9937879721655392,TO3,Bulk,2020,OGL,3,Conv Till,no CC,Corn-Soybean,Fall
+TOa,Simpson,0.9877793449347724,TOa,Bulk,2021,OGL,1,Conv Till,no CC,Corn-Soybean,Spring
+TOb,Simpson,0.9939928899558684,TOb,Bulk,2021,OGL,2,Conv Till,no CC,Corn-Soybean,Spring
+TOc,Simpson,0.9894897576928794,TOc,Bulk,2021,OGL,3,Conv Till,no CC,Corn-Soybean,Spring
+WB1,Simpson,0.9989495661141337,WB1,Bulk,2020,BRE,1,Conv Till,no CC,Soybean-Soybean,Fall
+WB2,Simpson,0.9992064592184969,WB2,Bulk,2020,BRE,2,Conv Till,no CC,Soybean-Soybean,Fall
+WB3,Simpson,0.9992080421999615,WB3,Bulk,2020,BRE,3,Conv Till,no CC,Soybean-Soybean,Fall
+WBa,Simpson,0.988963169063204,WBa,Bulk,2021,BRE,1,Conv Till,no CC,Soybean-Soybean,Spring
+WBb,Simpson,0.985962218474731,WBb,Bulk,2021,BRE,2,Conv Till,no CC,Soybean-Soybean,Spring
+WBc,Simpson,0.991580720035688,WBc,Bulk,2021,BRE,3,Conv Till,no CC,Soybean-Soybean,Spring
+AS1,InvSimpson,887.6021488515365,AS1,Bulk,2020,SCH,1,Min Till,CC-mix,Cotton-Soybean,Fall
+AS2,InvSimpson,1033.3587613943223,AS2,Bulk,2020,SCH,2,Min Till,CC-mix,Cotton-Soybean,Fall
+AS3,InvSimpson,768.0418951518782,AS3,Bulk,2020,SCH,3,Min Till,CC-mix,Cotton-Soybean,Fall
+ASa,InvSimpson,108.36958804592952,ASa,Bulk,2021,SCH,1,Min Till,CC-mix,Cotton-Soybean,Spring
+ASb,InvSimpson,105.35076845202934,ASb,Bulk,2021,SCH,2,Min Till,CC-mix,Cotton-Soybean,Spring
+ASc,InvSimpson,75.16210017682381,ASc,Bulk,2021,SCH,3,Min Till,CC-mix,Cotton-Soybean,Spring
+GR1,InvSimpson,401.62257470142197,GR1,Bulk,2020,ROB,1,Min Till,CC-mix,Corn-Soybean,Fall
+GR2,InvSimpson,965.3553137329691,GR2,Bulk,2020,ROB,2,Min Till,CC-mix,Corn-Soybean,Fall
+GR3,InvSimpson,528.1680399652513,GR3,Bulk,2020,ROB,3,Min Till,CC-mix,Corn-Soybean,Fall
+GRa,InvSimpson,96.10716818167253,GRa,Bulk,2021,ROB,1,Min Till,CC-mix,Corn-Soybean,Spring
+GRb,InvSimpson,144.8352937117754,GRb,Bulk,2021,ROB,2,Min Till,CC-mix,Corn-Soybean,Spring
+GRc,InvSimpson,221.15324318429245,GRc,Bulk,2021,ROB,3,Min Till,CC-mix,Corn-Soybean,Spring
+NK3,InvSimpson,1143.2707833771244,NK3,Bulk,2020,KIN,3,Conv Till,no CC,Soybean-Corn,Fall
+NK4,InvSimpson,1241.9125802449953,NK4,Bulk,2020,KIN,4,Conv Till,no CC,Soybean-Corn,Fall
+NK5,InvSimpson,1370.691800620729,NK5,Bulk,2020,KIN,5,Conv Till,no CC,Soybean-Corn,Fall
+NKc,InvSimpson,139.0773157950317,NKc,Bulk,2021,KIN,3,Conv Till,no CC,Soybean-Corn,Spring
+NKd,InvSimpson,85.91257692914628,NKd,Bulk,2021,KIN,4,Conv Till,no CC,Soybean-Corn,Spring
+NKe,InvSimpson,68.93964789457438,NKe,Bulk,2021,KIN,5,Conv Till,no CC,Soybean-Corn,Spring
+RE1,InvSimpson,1276.3675512455632,RE1,Bulk,2020,EVA,1,Min Till,CC-mix,Soybean-Soybean,Fall
+RE2,InvSimpson,1405.2918579277696,RE2,Bulk,2020,EVA,2,Min Till,CC-mix,Soybean-Soybean,Fall
+RE3,InvSimpson,1333.6268709311164,RE3,Bulk,2020,EVA,3,Min Till,CC-mix,Soybean-Soybean,Fall
+REa,InvSimpson,147.97775534959231,REa,Bulk,2021,EVA,1,Min Till,CC-mix,Soybean-Soybean,Spring
+REb,InvSimpson,105.36413435561151,REb,Bulk,2021,EVA,2,Min Till,CC-mix,Soybean-Soybean,Spring
+REc,InvSimpson,162.81732525016417,REc,Bulk,2021,EVA,3,Min Till,CC-mix,Soybean-Soybean,Spring
+TO1,InvSimpson,1133.4269071481433,TO1,Bulk,2020,OGL,1,Conv Till,no CC,Corn-Soybean,Fall
+TO2,InvSimpson,1124.2489577876006,TO2,Bulk,2020,OGL,2,Conv Till,no CC,Corn-Soybean,Fall
+TO3,InvSimpson,160.97802950150455,TO3,Bulk,2020,OGL,3,Conv Till,no CC,Corn-Soybean,Fall
+TOa,InvSimpson,81.82867404918221,TOa,Bulk,2021,OGL,1,Conv Till,no CC,Corn-Soybean,Spring
+TOb,InvSimpson,166.46939920418234,TOb,Bulk,2021,OGL,2,Conv Till,no CC,Corn-Soybean,Spring
+TOc,InvSimpson,95.14528502568515,TOc,Bulk,2021,OGL,3,Conv Till,no CC,Corn-Soybean,Spring
+WB1,InvSimpson,951.9875676661444,WB1,Bulk,2020,BRE,1,Conv Till,no CC,Soybean-Soybean,Fall
+WB2,InvSimpson,1260.1746794989535,WB2,Bulk,2020,BRE,2,Conv Till,no CC,Soybean-Soybean,Fall
+WB3,InvSimpson,1262.6935424480962,WB3,Bulk,2020,BRE,3,Conv Till,no CC,Soybean-Soybean,Fall
+WBa,InvSimpson,90.60571877259397,WBa,Bulk,2021,BRE,1,Conv Till,no CC,Soybean-Soybean,Spring
+WBb,InvSimpson,71.23632734986852,WBb,Bulk,2021,BRE,2,Conv Till,no CC,Soybean-Soybean,Spring
+WBc,InvSimpson,118.77500264141901,WBc,Bulk,2021,BRE,3,Conv Till,no CC,Soybean-Soybean,Spring
+AS1,Fisher,525.5355237795089,AS1,Bulk,2020,SCH,1,Min Till,CC-mix,Cotton-Soybean,Fall
+AS2,Fisher,560.1283075659826,AS2,Bulk,2020,SCH,2,Min Till,CC-mix,Cotton-Soybean,Fall
+AS3,Fisher,552.1707322317807,AS3,Bulk,2020,SCH,3,Min Till,CC-mix,Cotton-Soybean,Fall
+ASa,Fisher,29.148717075046207,ASa,Bulk,2021,SCH,1,Min Till,CC-mix,Cotton-Soybean,Spring
+ASb,Fisher,31.704956419937428,ASb,Bulk,2021,SCH,2,Min Till,CC-mix,Cotton-Soybean,Spring
+ASc,Fisher,23.336482703042527,ASc,Bulk,2021,SCH,3,Min Till,CC-mix,Cotton-Soybean,Spring
+GR1,Fisher,513.9778602890814,GR1,Bulk,2020,ROB,1,Min Till,CC-mix,Corn-Soybean,Fall
+GR2,Fisher,538.6055009190602,GR2,Bulk,2020,ROB,2,Min Till,CC-mix,Corn-Soybean,Fall
+GR3,Fisher,284.52650538715073,GR3,Bulk,2020,ROB,3,Min Till,CC-mix,Corn-Soybean,Fall
+GRa,Fisher,31.512266859048452,GRa,Bulk,2021,ROB,1,Min Till,CC-mix,Corn-Soybean,Spring
+GRb,Fisher,39.21840087552227,GRb,Bulk,2021,ROB,2,Min Till,CC-mix,Corn-Soybean,Spring
+GRc,Fisher,75.86040659685236,GRc,Bulk,2021,ROB,3,Min Till,CC-mix,Corn-Soybean,Spring
+NK3,Fisher,578.8826554642505,NK3,Bulk,2020,KIN,3,Conv Till,no CC,Soybean-Corn,Fall
+NK4,Fisher,669.238922229652,NK4,Bulk,2020,KIN,4,Conv Till,no CC,Soybean-Corn,Fall
+NK5,Fisher,676.872455198756,NK5,Bulk,2020,KIN,5,Conv Till,no CC,Soybean-Corn,Fall
+NKc,Fisher,38.05249343666701,NKc,Bulk,2021,KIN,3,Conv Till,no CC,Soybean-Corn,Spring
+NKd,Fisher,23.5927421198785,NKd,Bulk,2021,KIN,4,Conv Till,no CC,Soybean-Corn,Spring
+NKe,Fisher,17.474400445654666,NKe,Bulk,2021,KIN,5,Conv Till,no CC,Soybean-Corn,Spring
+RE1,Fisher,696.3294040718703,RE1,Bulk,2020,EVA,1,Min Till,CC-mix,Soybean-Soybean,Fall
+RE2,Fisher,660.2507715620009,RE2,Bulk,2020,EVA,2,Min Till,CC-mix,Soybean-Soybean,Fall
+RE3,Fisher,667.1812250545585,RE3,Bulk,2020,EVA,3,Min Till,CC-mix,Soybean-Soybean,Fall
+REa,Fisher,45.18174676317968,REa,Bulk,2021,EVA,1,Min Till,CC-mix,Soybean-Soybean,Spring
+REb,Fisher,31.483344666588657,REb,Bulk,2021,EVA,2,Min Till,CC-mix,Soybean-Soybean,Spring
+REc,Fisher,45.02636034119125,REc,Bulk,2021,EVA,3,Min Till,CC-mix,Soybean-Soybean,Spring
+TO1,Fisher,643.0822934318873,TO1,Bulk,2020,OGL,1,Conv Till,no CC,Corn-Soybean,Fall
+TO2,Fisher,677.0395905382032,TO2,Bulk,2020,OGL,2,Conv Till,no CC,Corn-Soybean,Fall
+TO3,Fisher,600.7253240565284,TO3,Bulk,2020,OGL,3,Conv Till,no CC,Corn-Soybean,Fall
+TOa,Fisher,24.539652385271086,TOa,Bulk,2021,OGL,1,Conv Till,no CC,Corn-Soybean,Spring
+TOb,Fisher,52.83386211813692,TOb,Bulk,2021,OGL,2,Conv Till,no CC,Corn-Soybean,Spring
+TOc,Fisher,26.695880538259665,TOc,Bulk,2021,OGL,3,Conv Till,no CC,Corn-Soybean,Spring
+WB1,Fisher,602.0585367028476,WB1,Bulk,2020,BRE,1,Conv Till,no CC,Soybean-Soybean,Fall
+WB2,Fisher,630.4707851495491,WB2,Bulk,2020,BRE,2,Conv Till,no CC,Soybean-Soybean,Fall
+WB3,Fisher,632.7478046089652,WB3,Bulk,2020,BRE,3,Conv Till,no CC,Soybean-Soybean,Fall
+WBa,Fisher,26.85731135410404,WBa,Bulk,2021,BRE,1,Conv Till,no CC,Soybean-Soybean,Spring
+WBb,Fisher,20.55614940898026,WBb,Bulk,2021,BRE,2,Conv Till,no CC,Soybean-Soybean,Spring
+WBc,Fisher,30.953976337900496,WBc,Bulk,2021,BRE,3,Conv Till,no CC,Soybean-Soybean,Spring
+AS1,Pielou,0.9333114233919152,AS1,Bulk,2020,SCH,1,Min Till,CC-mix,Cotton-Soybean,Fall
+AS2,Pielou,0.9372685656168529,AS2,Bulk,2020,SCH,2,Min Till,CC-mix,Cotton-Soybean,Fall
+AS3,Pielou,0.9293540657890962,AS3,Bulk,2020,SCH,3,Min Till,CC-mix,Cotton-Soybean,Fall
+ASa,Pielou,0.9549241636405466,ASa,Bulk,2021,SCH,1,Min Till,CC-mix,Cotton-Soybean,Spring
+ASb,Pielou,0.9485251958331391,ASb,Bulk,2021,SCH,2,Min Till,CC-mix,Cotton-Soybean,Spring
+ASc,Pielou,0.9454168690532655,ASc,Bulk,2021,SCH,3,Min Till,CC-mix,Cotton-Soybean,Spring
+GR1,Pielou,0.9127399548415138,GR1,Bulk,2020,ROB,1,Min Till,CC-mix,Corn-Soybean,Fall
+GR2,Pielou,0.9380099069253224,GR2,Bulk,2020,ROB,2,Min Till,CC-mix,Corn-Soybean,Fall
+GR3,Pielou,0.9373317554631934,GR3,Bulk,2020,ROB,3,Min Till,CC-mix,Corn-Soybean,Fall
+GRa,Pielou,0.9430697857381936,GRa,Bulk,2021,ROB,1,Min Till,CC-mix,Corn-Soybean,Spring
+GRb,Pielou,0.9592907404518932,GRb,Bulk,2021,ROB,2,Min Till,CC-mix,Corn-Soybean,Spring
+GRc,Pielou,0.9491538269629017,GRc,Bulk,2021,ROB,3,Min Till,CC-mix,Corn-Soybean,Spring
+NK3,Pielou,0.9411486472609734,NK3,Bulk,2020,KIN,3,Conv Till,no CC,Soybean-Corn,Fall
+NK4,Pielou,0.9378752558281602,NK4,Bulk,2020,KIN,4,Conv Till,no CC,Soybean-Corn,Fall
+NK5,Pielou,0.9417918363785076,NK5,Bulk,2020,KIN,5,Conv Till,no CC,Soybean-Corn,Fall
+NKc,Pielou,0.9584150966660767,NKc,Bulk,2021,KIN,3,Conv Till,no CC,Soybean-Corn,Spring
+NKd,Pielou,0.9542399345834459,NKd,Bulk,2021,KIN,4,Conv Till,no CC,Soybean-Corn,Spring
+NKe,Pielou,0.9565626785292822,NKe,Bulk,2021,KIN,5,Conv Till,no CC,Soybean-Corn,Spring
+RE1,Pielou,0.9404171999292248,RE1,Bulk,2020,EVA,1,Min Till,CC-mix,Soybean-Soybean,Fall
+RE2,Pielou,0.9479521962339095,RE2,Bulk,2020,EVA,2,Min Till,CC-mix,Soybean-Soybean,Fall
+RE3,Pielou,0.9429333742990706,RE3,Bulk,2020,EVA,3,Min Till,CC-mix,Soybean-Soybean,Fall
+REa,Pielou,0.9490436891519384,REa,Bulk,2021,EVA,1,Min Till,CC-mix,Soybean-Soybean,Spring
+REb,Pielou,0.9506742739843766,REb,Bulk,2021,EVA,2,Min Till,CC-mix,Soybean-Soybean,Spring
+REc,Pielou,0.9599354797526937,REc,Bulk,2021,EVA,3,Min Till,CC-mix,Soybean-Soybean,Spring
+TO1,Pielou,0.9385608121202,TO1,Bulk,2020,OGL,1,Conv Till,no CC,Corn-Soybean,Fall
+TO2,Pielou,0.9387587399302524,TO2,Bulk,2020,OGL,2,Conv Till,no CC,Corn-Soybean,Fall
+TO3,Pielou,0.8906224983484491,TO3,Bulk,2020,OGL,3,Conv Till,no CC,Corn-Soybean,Fall
+TOa,Pielou,0.9430642501317411,TOa,Bulk,2021,OGL,1,Conv Till,no CC,Corn-Soybean,Spring
+TOb,Pielou,0.9492877542647743,TOb,Bulk,2021,OGL,2,Conv Till,no CC,Corn-Soybean,Spring
+TOc,Pielou,0.953060247680897,TOc,Bulk,2021,OGL,3,Conv Till,no CC,Corn-Soybean,Spring
+WB1,Pielou,0.9338133922654664,WB1,Bulk,2020,BRE,1,Conv Till,no CC,Soybean-Soybean,Fall
+WB2,Pielou,0.9420438331349139,WB2,Bulk,2020,BRE,2,Conv Till,no CC,Soybean-Soybean,Fall
+WB3,Pielou,0.9430240369982964,WB3,Bulk,2020,BRE,3,Conv Till,no CC,Soybean-Soybean,Fall
+WBa,Pielou,0.95421862309286,WBa,Bulk,2021,BRE,1,Conv Till,no CC,Soybean-Soybean,Spring
+WBb,Pielou,0.9450558286613716,WBb,Bulk,2021,BRE,2,Conv Till,no CC,Soybean-Soybean,Spring
+WBc,Pielou,0.9617209968310251,WBc,Bulk,2021,BRE,3,Conv Till,no CC,Soybean-Soybean,Spring
+AS1,Coverage,0.9995391410100493,AS1,Bulk,2020,SCH,1,Min Till,CC-mix,Cotton-Soybean,Fall
+AS2,Coverage,0.9995391188450568,AS2,Bulk,2020,SCH,2,Min Till,CC-mix,Cotton-Soybean,Fall
+AS3,Coverage,0.9994458605785216,AS3,Bulk,2020,SCH,3,Min Till,CC-mix,Cotton-Soybean,Fall
+ASa,Coverage,1,ASa,Bulk,2021,SCH,1,Min Till,CC-mix,Cotton-Soybean,Spring
+ASb,Coverage,0.9998465316144874,ASb,Bulk,2021,SCH,2,Min Till,CC-mix,Cotton-Soybean,Spring
+ASc,Coverage,1,ASc,Bulk,2021,SCH,3,Min Till,CC-mix,Cotton-Soybean,Spring
+GR1,Coverage,0.9991973574537709,GR1,Bulk,2020,ROB,1,Min Till,CC-mix,Corn-Soybean,Fall
+GR2,Coverage,0.9994388990608942,GR2,Bulk,2020,ROB,2,Min Till,CC-mix,Corn-Soybean,Fall
+GR3,Coverage,0.9997471845552747,GR3,Bulk,2020,ROB,3,Min Till,CC-mix,Corn-Soybean,Fall
+GRa,Coverage,0.9996914532551682,GRa,Bulk,2021,ROB,1,Min Till,CC-mix,Corn-Soybean,Spring
+GRb,Coverage,1,GRb,Bulk,2021,ROB,2,Min Till,CC-mix,Corn-Soybean,Spring
+GRc,Coverage,1,GRc,Bulk,2021,ROB,3,Min Till,CC-mix,Corn-Soybean,Spring
+NK3,Coverage,0.9992410321962132,NK3,Bulk,2020,KIN,3,Conv Till,no CC,Soybean-Corn,Fall
+NK4,Coverage,0.9992067803976964,NK4,Bulk,2020,KIN,4,Conv Till,no CC,Soybean-Corn,Fall
+NK5,Coverage,0.9989179751380196,NK5,Bulk,2020,KIN,5,Conv Till,no CC,Soybean-Corn,Fall
+NKc,Coverage,1,NKc,Bulk,2021,KIN,3,Conv Till,no CC,Soybean-Corn,Spring
+NKd,Coverage,1,NKd,Bulk,2021,KIN,4,Conv Till,no CC,Soybean-Corn,Spring
+NKe,Coverage,1,NKe,Bulk,2021,KIN,5,Conv Till,no CC,Soybean-Corn,Spring
+RE1,Coverage,0.9989340139629157,RE1,Bulk,2020,EVA,1,Min Till,CC-mix,Soybean-Soybean,Fall
+RE2,Coverage,0.9989674368490363,RE2,Bulk,2020,EVA,2,Min Till,CC-mix,Soybean-Soybean,Fall
+RE3,Coverage,0.9989412717194993,RE3,Bulk,2020,EVA,3,Min Till,CC-mix,Soybean-Soybean,Fall
+REa,Coverage,1,REa,Bulk,2021,EVA,1,Min Till,CC-mix,Soybean-Soybean,Spring
+REb,Coverage,1,REb,Bulk,2021,EVA,2,Min Till,CC-mix,Soybean-Soybean,Spring
+REc,Coverage,1,REc,Bulk,2021,EVA,3,Min Till,CC-mix,Soybean-Soybean,Spring
+TO1,Coverage,0.9993129761627265,TO1,Bulk,2020,OGL,1,Conv Till,no CC,Corn-Soybean,Fall
+TO2,Coverage,0.9991053804972948,TO2,Bulk,2020,OGL,2,Conv Till,no CC,Corn-Soybean,Fall
+TO3,Coverage,0.9988577362409138,TO3,Bulk,2020,OGL,3,Conv Till,no CC,Corn-Soybean,Fall
+TOa,Coverage,1,TOa,Bulk,2021,OGL,1,Conv Till,no CC,Corn-Soybean,Spring
+TOb,Coverage,1,TOb,Bulk,2021,OGL,2,Conv Till,no CC,Corn-Soybean,Spring
+TOc,Coverage,1,TOc,Bulk,2021,OGL,3,Conv Till,no CC,Corn-Soybean,Spring
+WB1,Coverage,0.999438092446008,WB1,Bulk,2020,BRE,1,Conv Till,no CC,Soybean-Soybean,Fall
+WB2,Coverage,0.9993136864645245,WB2,Bulk,2020,BRE,2,Conv Till,no CC,Soybean-Soybean,Fall
+WB3,Coverage,0.9991207284541214,WB3,Bulk,2020,BRE,3,Conv Till,no CC,Soybean-Soybean,Fall
+WBa,Coverage,1,WBa,Bulk,2021,BRE,1,Conv Till,no CC,Soybean-Soybean,Spring
+WBb,Coverage,1,WBb,Bulk,2021,BRE,2,Conv Till,no CC,Soybean-Soybean,Spring
+WBc,Coverage,1,WBc,Bulk,2021,BRE,3,Conv Till,no CC,Soybean-Soybean,Spring
