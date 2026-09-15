@@ -1,0 +1,5 @@
+Term,Df,SumOfSqs,R2,F,Pr(>F),Model,.before
+Year:tillage:Crop_rotation,1,0.3593302339687252,0.026961149354572646,1.3273992623279223,0.1085,Year × Tillage × Crop rotation,1
+Year:cover_crop:Crop_rotation,1,0.3593302339687252,0.026961149354572646,1.3273992623279223,0.1063,Year × Cover crop × Crop rotation,1
+Season:tillage:Crop_rotation,1,0.3593302339687252,0.026961149354572646,1.3273992623279223,0.1009,Season × Tillage × Crop rotation,1
+Season:cover_crop:Crop_rotation,1,0.3593302339687252,0.026961149354572646,1.3273992623279223,0.1069,Season × Cover crop × Crop rotation,1
