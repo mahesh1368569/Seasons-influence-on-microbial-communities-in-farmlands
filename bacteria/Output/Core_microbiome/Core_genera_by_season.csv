@@ -1,0 +1,187 @@
+Genus,prevalence_Fall,prevalence_Spring,mean_RA_Fall,mean_RA_Spring,Core_status
+d__Bacteria|p__Acidobacteria|c__Acidobacteria-6|o__iii1-15|f__|g__,0.8888888888888888,0,2.0773609218762538e-4,0,Fall core only
+d__Bacteria|p__Acidobacteria|c__Acidobacteria-6|o__|f__|g__,1,1,0.03328928080038464,0.044846136933257015,Shared core
+d__Bacteria|p__Acidobacteria|c__Acidobacteriia|o__Acidobacteriales|f__Acidobacteriaceae|g__,0.8888888888888888,0.5,0.0022511607958188716,0.002280033194314772,Fall core only
+d__Bacteria|p__Acidobacteria|c__Acidobacteriia|o__Acidobacteriales|f__Acidobacteriaceae|g__Telmatobacter,0.8333333333333334,0.05555555555555555,5.601636232927349e-4,4.689311779551189e-4,Fall core only
+d__Bacteria|p__Acidobacteria|c__Acidobacteriia|o__Acidobacteriales|f__Koribacteraceae|g__Candidatus Koribacter,0.9444444444444444,0.2777777777777778,0.0036091890302513345,0.0029427048480897226,Fall core only
+d__Bacteria|p__Acidobacteria|c__Acidobacteriia|o__Acidobacteriales|f__|g__,0.8888888888888888,0.2222222222222222,0.0034657426074799717,0.00158905385157281,Fall core only
+d__Bacteria|p__Acidobacteria|c__Solibacteres|o__Solibacterales|f__MVS-65|g__,1,0.5555555555555556,0.0073669113188246085,0.005953608880857594,Fall core only
+d__Bacteria|p__Acidobacteria|c__Solibacteres|o__Solibacterales|f__OPB3|g__,1,0.16666666666666666,0.00388744444992667,9.74704193160874e-4,Fall core only
+d__Bacteria|p__Acidobacteria|c__Solibacteres|o__Solibacterales|f__PK34|g__,1,0.1111111111111111,0.0013050300381623713,0.001499975523893221,Fall core only
+d__Bacteria|p__Acidobacteria|c__Solibacteres|o__Solibacterales|f__|g__,1,0.4444444444444444,0.004781970415450532,0.004615407547426481,Fall core only
+d__Bacteria|p__Acidobacteria|c__[Chloracidobacteria]|o__DS-100|f__|g__,0.9444444444444444,0.3888888888888889,8.16319673789714e-4,0.0011730719574955144,Fall core only
+d__Bacteria|p__Acidobacteria|c__[Chloracidobacteria]|o__RB41|f__Ellin6075|g__,0.8888888888888888,0.5,0.0015881377593654795,0.0033058547444757653,Fall core only
+d__Bacteria|p__Acidobacteria|c__[Chloracidobacteria]|o__RB41|f__|g__,1,0.1111111111111111,0.005136383240104795,6.511955715067097e-4,Fall core only
+d__Bacteria|p__Acidobacteria|c__[Chloracidobacteria]|o__|f__|g__,1,0.16666666666666666,5.502691049926627e-4,0.0013111626380388046,Fall core only
+d__Bacteria|p__Acidobacteria|c__|o__|f__|g__,1,0.05555555555555555,9.388087573145615e-4,8.729425165018813e-4,Fall core only
+d__Bacteria|p__Actinobacteria|c__Acidimicrobiia|o__Acidimicrobiales|f__C111|g__Ilumatobacter,1,0.2222222222222222,0.0038057207045414463,9.83438128272817e-4,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Actinosynnemataceae|g__,1,0,0.008441546854036848,0,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Geodermatophilaceae|g__,1,0,8.738200162916841e-4,0,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Geodermatophilaceae|g__Blastococcus,1,0.2777777777777778,0.005799860941689713,0.0015989394312625512,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Intrasporangiaceae|g__,1,0.16666666666666666,0.0076707337103200275,0.002074096651863934,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Intrasporangiaceae|g__Tetrasphaera,0.8333333333333334,0.05555555555555555,0.0019467698529363495,3.5207621414517967e-4,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Kineosporiaceae|g__Kineosporia,1,0.05555555555555555,0.002870799662099551,8.611281631539456e-4,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Microbacteriaceae|g__,1,0.05555555555555555,0.0034082601540600544,5.432212380331557e-4,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Micrococcaceae|g__Arthrobacter,1,1,0.0130392484823075,0.011004353436092344,Shared core
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Micromonosporaceae|g__,1,0.16666666666666666,0.03627742761547705,4.081009916334317e-4,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Micromonosporaceae|g__Actinoplanes,0.8333333333333334,0,0.0022577804520649693,0,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Micromonosporaceae|g__Micromonospora,1,0.05555555555555555,0.004277931892710318,4.66531180899063e-4,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Mycobacteriaceae|g__Mycobacterium,1,0.16666666666666666,0.009538940344630683,6.823704548003118e-4,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Nocardioidaceae|g__,1,0.2777777777777778,0.005650241677138908,0.003188135720993618,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Nocardioidaceae|g__Marmoricola,1,0.05555555555555555,0.0016823274648547796,1.7904644976468186e-4,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Nocardioidaceae|g__Nocardioides,1,0.4444444444444444,0.01171425902605355,0.005290278681211253,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Streptomycetaceae|g__,1,0.05555555555555555,0.00493051539470687,4.067421580111936e-4,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Streptomycetaceae|g__Streptomyces,1,0.4444444444444444,0.012296581126121512,0.005720822300023867,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Streptosporangiaceae|g__,1,0,0.0016773971492620322,0,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Thermomonosporaceae|g__,0.8888888888888888,0,9.785682431270302e-4,0,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__Thermomonosporaceae|g__Actinomadura,0.8888888888888888,0.16666666666666666,0.004344313998356406,0.0014338943241133171,Fall core only
+d__Bacteria|p__Actinobacteria|c__Actinobacteria|o__Actinomycetales|f__|g__,1,0.2777777777777778,0.04001441004326743,9.977602672287225e-4,Fall core only
+d__Bacteria|p__Actinobacteria|c__Thermoleophilia|o__Gaiellales|f__Gaiellaceae|g__Gaiella,1,0.8333333333333334,0.029575377934267812,0.010196017217252749,Shared core
+d__Bacteria|p__Actinobacteria|c__Thermoleophilia|o__Solirubrobacterales|f__Solirubrobacteraceae|g__Solirubrobacter,1,0,0.004917612134877837,0,Fall core only
+d__Bacteria|p__Actinobacteria|c__Thermoleophilia|o__Solirubrobacterales|f__|g__,0.8333333333333334,0.05555555555555555,0.00132607309198442,1.9794785023211412e-4,Fall core only
+d__Bacteria|p__Actinobacteria|c__|o__|f__|g__,1,0.7222222222222222,0.02696282033409618,0.005758660821583886,Fall core only
+d__Bacteria|p__Bacteroidetes|c__Bacteroidia|o__Bacteroidales|f__|g__,1,0.3888888888888889,5.830783810690381e-4,4.848451425704593e-4,Fall core only
+d__Bacteria|p__Bacteroidetes|c__Cytophagia|o__Cytophagales|f__Cytophagaceae|g__,1,0.8333333333333334,0.0025657723008255277,0.017035265939486722,Shared core
+d__Bacteria|p__Bacteroidetes|c__Cytophagia|o__Cytophagales|f__Flammeovirgaceae|g__Marinoscillum,0.9444444444444444,0.2777777777777778,4.409625388987931e-4,0.001539706494713497,Fall core only
+d__Bacteria|p__Bacteroidetes|c__Cytophagia|o__Cytophagales|f__|g__,0.9444444444444444,0.3333333333333333,0.00124092456920401,0.0012429530071286102,Fall core only
+d__Bacteria|p__Bacteroidetes|c__Flavobacteriia|o__Flavobacteriales|f__Flavobacteriaceae|g__Flavobacterium,0.8333333333333334,0.7777777777777778,0.0014887678552518698,0.007479137087002519,Fall core only
+d__Bacteria|p__Bacteroidetes|c__[Saprospirae]|o__[Saprospirales]|f__Chitinophagaceae|g__,1,1,0.007624251866857438,0.03259379895982665,Shared core
+d__Bacteria|p__Bacteroidetes|c__[Saprospirae]|o__[Saprospirales]|f__Chitinophagaceae|g__Ferruginibacter,1,0.7777777777777778,5.558563695246115e-4,0.005051583924678822,Fall core only
+d__Bacteria|p__Bacteroidetes|c__[Saprospirae]|o__[Saprospirales]|f__Chitinophagaceae|g__Parasegitibacter,1,0.6666666666666666,8.833283030384769e-4,0.003335162709538678,Fall core only
+d__Bacteria|p__Bacteroidetes|c__[Saprospirae]|o__[Saprospirales]|f__Chitinophagaceae|g__Terrimonas,0.8333333333333334,0.16666666666666666,6.824020080980136e-4,8.291864334072499e-4,Fall core only
+d__Bacteria|p__Bacteroidetes|c__[Saprospirae]|o__[Saprospirales]|f__Chitinophagaceae|g__Trachelomonas,1,1,0.0020792647081646575,0.016553559103567473,Shared core
+d__Bacteria|p__Bacteroidetes|c__|o__|f__|g__,1,0.8888888888888888,0.0015803424895389068,0.005242808753045036,Shared core
+d__Bacteria|p__Chloroflexi|c__Anaerolineae|o__A31|f__S47|g__,1,0,0.0012600236149235343,0,Fall core only
+d__Bacteria|p__Chloroflexi|c__Anaerolineae|o__Caldilineales|f__Caldilineaceae|g__Litorilinea,1,0.2777777777777778,0.0021712416597084337,7.056997802160867e-4,Fall core only
+d__Bacteria|p__Chloroflexi|c__Anaerolineae|o__H39|f__|g__,0.8888888888888888,0,4.596812138374418e-4,0,Fall core only
+d__Bacteria|p__Chloroflexi|c__Anaerolineae|o__SBR1031|f__A4b|g__,1,0.1111111111111111,0.0018050683968106993,1.787081286695439e-4,Fall core only
+d__Bacteria|p__Chloroflexi|c__Anaerolineae|o__SBR1031|f__oc28|g__,0.9444444444444444,0,4.705968410483205e-4,0,Fall core only
+d__Bacteria|p__Chloroflexi|c__Anaerolineae|o__envOPS12|f__|g__,0.9444444444444444,0.2777777777777778,9.908900648886811e-4,0.0016733448683904403,Fall core only
+d__Bacteria|p__Chloroflexi|c__Anaerolineae|o__|f__|g__,0.8888888888888888,0,4.704082660334808e-4,0,Fall core only
+d__Bacteria|p__Chloroflexi|c__C0119|o__|f__|g__,1,0.2222222222222222,0.0021688495752390114,3.995268442778411e-4,Fall core only
+d__Bacteria|p__Chloroflexi|c__Chloroflexi|o__AKIW781|f__|g__,0.9444444444444444,0.05555555555555555,0.0020465466711152586,4.142073107590348e-5,Fall core only
+d__Bacteria|p__Chloroflexi|c__Chloroflexi|o__Chloroflexales|f__FFCH7168|g__,0.8888888888888888,0.05555555555555555,3.077618398319599e-4,5.9046691171043525e-5,Fall core only
+d__Bacteria|p__Chloroflexi|c__Chloroflexi|o__[Roseiflexales]|f__[Kouleothrixaceae]|g__,1,0,0.005674186250262799,0,Fall core only
+d__Bacteria|p__Chloroflexi|c__Chloroflexi|o__[Roseiflexales]|f__[Roseiflexaceae]|g__,1,0.1111111111111111,0.002888691042489793,1.1114573122323011e-4,Fall core only
+d__Bacteria|p__Chloroflexi|c__Chloroflexi|o__[Roseiflexales]|f__|g__,1,0.1111111111111111,0.006418740844945546,9.458260482743652e-5,Fall core only
+d__Bacteria|p__Chloroflexi|c__Chloroflexi|o__|f__|g__,0.8333333333333334,0,8.045965365530092e-4,0,Fall core only
+d__Bacteria|p__Chloroflexi|c__Ellin6529|o__|f__|g__,1,0.3333333333333333,0.008242047912423878,0.002719640200609526,Fall core only
+d__Bacteria|p__Chloroflexi|c__Gitt-GS-136|o__|f__|g__,1,0.6666666666666666,0.0025982277472556036,0.005376231804831096,Fall core only
+d__Bacteria|p__Chloroflexi|c__Ktedonobacteria|o__JG30-KF-AS9|f__|g__,0.8888888888888888,0,0.0027273804981201764,0,Fall core only
+d__Bacteria|p__Chloroflexi|c__P2-11E|o__|f__|g__,0.8333333333333334,0.05555555555555555,3.3564958323662874e-4,1.879098784223086e-4,Fall core only
+d__Bacteria|p__Chloroflexi|c__TK10|o__AKYG885|f__Dolo_23|g__,0.9444444444444444,0,0.0012546195626184564,0,Fall core only
+d__Bacteria|p__Chloroflexi|c__TK10|o__B07_WMSP1|f__FFCH4570|g__,0.8333333333333334,0.1111111111111111,8.900029962132555e-4,4.8510443174576304e-4,Fall core only
+d__Bacteria|p__Chloroflexi|c__TK10|o__B07_WMSP1|f__|g__,1,0.1111111111111111,0.0014772187000533406,5.35424379932437e-4,Fall core only
+d__Bacteria|p__Chloroflexi|c__TK10|o__|f__|g__,0.8333333333333334,0.05555555555555555,3.117066446631485e-4,2.1692915093930327e-5,Fall core only
+d__Bacteria|p__Chloroflexi|c__TK17|o__mle1-48|f__|g__,0.8888888888888888,0.1111111111111111,3.9814975242294165e-4,1.4114991427991856e-4,Fall core only
+d__Bacteria|p__Chloroflexi|c__Thermomicrobia|o__AKYG1722|f__|g__,0.9444444444444444,0,4.8509854613980146e-4,0,Fall core only
+d__Bacteria|p__Chloroflexi|c__Thermomicrobia|o__JG30-KF-CM45|f__|g__,1,0,0.004707155893245983,0,Fall core only
+d__Bacteria|p__Chloroflexi|c__|o__|f__|g__,0.8888888888888888,0,3.4823846148964165e-4,0,Fall core only
+d__Bacteria|p__Cyanobacteria|c__Chloroplast|o__Stramenopiles|f__|g__,0.8888888888888888,0.8888888888888888,4.1771472279493997e-4,0.009574495521994382,Shared core
+d__Bacteria|p__Cyanobacteria|c__Oscillatoriophycideae|o__|f__|g__,0.8888888888888888,0.4444444444444444,0.0029013321425706935,0.002024678901213373,Fall core only
+d__Bacteria|p__Cyanobacteria|c__|o__|f__|g__,0.9444444444444444,0.7222222222222222,0.0019829809768898187,0.013841885571446912,Fall core only
+d__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales|f__Bacillaceae|g__,1,0.5,0.00952408957503188,0.00425363406897181,Fall core only
+d__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales|f__Bacillaceae|g__Bacillus,1,1,0.014279055113095296,0.04631611056761724,Shared core
+d__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales|f__Paenibacillaceae|g__,1,0.2777777777777778,0.0017515377345606103,9.039394517811314e-4,Fall core only
+d__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales|f__Paenibacillaceae|g__Paenibacillus,0.8333333333333334,0.05555555555555555,6.930073630445031e-4,2.71161438674129e-5,Fall core only
+d__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales|f__Planococcaceae|g__,1,1,0.013782925232931321,0.041598534882502855,Shared core
+d__Bacteria|p__Firmicutes|c__Bacilli|o__Bacillales|f__|g__,1,0.6111111111111112,0.005525950732443154,0.0035769897566547667,Fall core only
+d__Bacteria|p__Firmicutes|c__Bacilli|o__|f__|g__,0.8333333333333334,0.2777777777777778,5.799788012519648e-4,0.0011074050346171161,Fall core only
+d__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Clostridiaceae|g__Clostridium,1,0.6666666666666666,0.0028512394339678246,0.0048103551319925,Fall core only
+d__Bacteria|p__Firmicutes|c__Clostridia|o__Clostridiales|f__Veillonellaceae|g__Anaerosinus,0.8888888888888888,0.16666666666666666,2.1168002663421573e-4,3.2812739544621386e-4,Fall core only
+d__Bacteria|p__Firmicutes|c__|o__|f__|g__,0.8333333333333334,0.05555555555555555,2.160555005218776e-4,2.9827758254154192e-5,Fall core only
+d__Bacteria|p__Gemmatimonadetes|c__Gemm-1|o__|f__|g__,1,0.8333333333333334,0.01454925883444093,0.010709095261710573,Shared core
+d__Bacteria|p__Gemmatimonadetes|c__Gemm-3|o__|f__|g__,1,0,0.0014225495601138405,0,Fall core only
+d__Bacteria|p__Gemmatimonadetes|c__Gemmatimonadetes|o__C114|f__|g__,0.9444444444444444,0,2.747908036076421e-4,0,Fall core only
+d__Bacteria|p__Gemmatimonadetes|c__Gemmatimonadetes|o__Ellin5290|f__|g__,1,0,0.0012838582018597047,0,Fall core only
+d__Bacteria|p__Gemmatimonadetes|c__Gemmatimonadetes|o__Gemmatimonadales|f__Ellin5301|g__,1,0,0.004831357901334465,0,Fall core only
+d__Bacteria|p__Gemmatimonadetes|c__Gemmatimonadetes|o__Gemmatimonadales|f__|g__,0.9444444444444444,0,0.0016792143582413945,0,Fall core only
+d__Bacteria|p__Gemmatimonadetes|c__Gemmatimonadetes|o__N1423WL|f__|g__,1,0.2222222222222222,0.002192852136010718,4.3842339576508e-4,Fall core only
+d__Bacteria|p__Gemmatimonadetes|c__Gemmatimonadetes|o__|f__|g__,1,0.05555555555555555,0.009647175841984917,3.1737596504435894e-4,Fall core only
+d__Bacteria|p__Nitrospirae|c__Nitrospira|o__Nitrospirales|f__0319-6A21|g__,0.8888888888888888,0,0.0016937643280724086,0,Fall core only
+d__Bacteria|p__Nitrospirae|c__Nitrospira|o__Nitrospirales|f__Nitrospiraceae|g__Nitrospira,1,1,0.009739838988036403,0.01412914226954805,Shared core
+d__Bacteria|p__OD1|c__|o__|f__|g__,0.9444444444444444,0.4444444444444444,3.8903794378685044e-4,4.7084496828801465e-4,Fall core only
+d__Bacteria|p__Planctomycetes|c__Phycisphaerae|o__WD2101|f__|g__,1,0.8333333333333334,0.006533233565054878,0.007924720909932651,Shared core
+d__Bacteria|p__Planctomycetes|c__Pla4|o__|f__|g__,0.8333333333333334,0,2.216409929817349e-4,0,Fall core only
+d__Bacteria|p__Planctomycetes|c__Planctomycetia|o__Gemmatales|f__Gemmataceae|g__,1,0.2777777777777778,0.0036656388623864207,3.693034125428022e-4,Fall core only
+d__Bacteria|p__Planctomycetes|c__Planctomycetia|o__Gemmatales|f__Gemmataceae|g__Gemmata,1,0.16666666666666666,0.003982777743017081,7.302752778865282e-4,Fall core only
+d__Bacteria|p__Planctomycetes|c__Planctomycetia|o__Gemmatales|f__Isosphaeraceae|g__Nostocoida,0.9444444444444444,0,0.0022438229185488294,0,Fall core only
+d__Bacteria|p__Planctomycetes|c__Planctomycetia|o__Gemmatales|f__|g__,0.9444444444444444,0,4.996809548388995e-4,0,Fall core only
+d__Bacteria|p__Planctomycetes|c__Planctomycetia|o__Pirellulales|f__Pirellulaceae|g__,1,0.4444444444444444,0.0018071450732273855,0.0011952539851299508,Fall core only
+d__Bacteria|p__Planctomycetes|c__Planctomycetia|o__Pirellulales|f__Pirellulaceae|g__Pirellula,0.9444444444444444,0.2222222222222222,0.001112841139494435,0.0010156897669734604,Fall core only
+d__Bacteria|p__Planctomycetes|c__Planctomycetia|o__Pirellulales|f__Pirellulaceae|g__planctomycete,1,0.7222222222222222,0.004691364528512627,0.0018282862001929758,Fall core only
+d__Bacteria|p__Planctomycetes|c__Planctomycetia|o__Planctomycetales|f__Planctomycetaceae|g__Planctomyces,1,0.1111111111111111,0.0017555648672695017,3.6540071008628935e-4,Fall core only
+d__Bacteria|p__Planctomycetes|c__Planctomycetia|o__|f__|g__,0.9444444444444444,0,3.6942951803274696e-4,0,Fall core only
+d__Bacteria|p__Planctomycetes|c__|o__|f__|g__,0.8888888888888888,0,3.775518676610392e-4,0,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Caulobacterales|f__Caulobacteraceae|g__Brevundimonas,0.8888888888888888,0,7.738476649123323e-4,0,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhizobiales|f__Beijerinckiaceae|g__,0.8888888888888888,0.05555555555555555,7.131602583501348e-4,1.084645754696516e-4,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhizobiales|f__Beijerinckiaceae|g__Salinarimonas,1,0.5,0.0018037272109064034,0.0029488274584851667,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhizobiales|f__Bradyrhizobiaceae|g__,1,1,0.018351684297907553,0.03730261638010159,Shared core
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhizobiales|f__Brucellaceae|g__Ochrobactrum,0.8333333333333334,0.1111111111111111,9.448605218224286e-4,5.790559932228325e-4,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhizobiales|f__Hyphomicrobiaceae|g__,1,0.7777777777777778,0.005495391010028245,0.010499363759964441,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhizobiales|f__Hyphomicrobiaceae|g__Hyphomicrobium,0.9444444444444444,0.5555555555555556,0.0015258344744642595,0.003003044204090264,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhizobiales|f__Methylobacteriaceae|g__,1,1,0.016149851338573724,0.017969589328885576,Shared core
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhizobiales|f__Methylobacteriaceae|g__Methylobacterium,0.9444444444444444,0.3333333333333333,0.0011612082194800602,0.001756952217836345,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhizobiales|f__Phyllobacteriaceae|g__,0.8888888888888888,0.05555555555555555,5.560770749893685e-4,3.259327428198934e-4,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhizobiales|f__Rhizobiaceae|g__,1,0.4444444444444444,0.0018474760514176356,0.00391564397367322,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhizobiales|f__Rhizobiaceae|g__Rhizobium,1,0.6111111111111112,0.0039480244154546295,0.004668246327416527,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhizobiales|f__Xanthobacteraceae|g__,1,0.1111111111111111,0.0027680828944638964,4.76959487462334e-4,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhizobiales|f__|g__,1,1,0.031718038154010524,0.047239630411700664,Shared core
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodobacterales|f__Hyphomonadaceae|g__Woodsholea,0.9444444444444444,0.2222222222222222,6.347096145935388e-4,9.737853355489367e-4,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodobacterales|f__Rhodobacteraceae|g__,0.8888888888888888,0.3888888888888889,0.001153907766548985,0.0014510038663735289,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodospirillales|f__Acetobacteraceae|g__,1,0.1111111111111111,0.002290571432523817,3.913606710031166e-4,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodospirillales|f__Acetobacteraceae|g__Roseomonas,0.8333333333333334,0,4.651506433003361e-4,0,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodospirillales|f__Rhodospirillaceae|g__,1,1,0.015396906803092046,0.016420988620248194,Shared core
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodospirillales|f__Rhodospirillaceae|g__Dongia,1,0.4444444444444444,9.107263054880342e-4,0.001573284326079287,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodospirillales|f__Rhodospirillaceae|g__Reyranella,1,0.6666666666666666,0.003752976911624539,0.007720265999668776,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodospirillales|f__Rhodospirillaceae|g__Skermanella,1,0.16666666666666666,0.004264844099363175,5.290342319494075e-4,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodospirillales|f__Rhodospirillaceae|g__Stella,0.9444444444444444,0.3333333333333333,0.0025950770854615782,0.00332741149775779,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Rhodospirillales|f__|g__,0.9444444444444444,0.2222222222222222,0.0012352073932148263,8.698055669519561e-4,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Sphingomonadales|f__Erythrobacteraceae|g__,1,0.6111111111111112,0.0020924278475160933,0.00414659566391896,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Sphingomonadales|f__Erythrobacteraceae|g__Porphyrobacter,0.8888888888888888,0.3333333333333333,9.695147112548343e-4,0.002363487041976104,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Sphingomonadales|f__Sphingomonadaceae|g__,1,1,0.012489515535061085,0.031132876273814915,Shared core
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Sphingomonadales|f__Sphingomonadaceae|g__Novosphingobium,0.8333333333333334,0.3333333333333333,0.0010290517552885247,0.001922483840351295,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Sphingomonadales|f__Sphingomonadaceae|g__Sphingomonas,1,0.8333333333333334,0.004216772298469159,0.014443804701766337,Shared core
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Sphingomonadales|f__Sphingomonadaceae|g__Sphingosinicella,1,1,0.008686745630438471,0.04134460464017275,Shared core
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__Sphingomonadales|f__|g__,1,0.5,0.0013042704835068244,0.005451380763854462,Fall core only
+d__Bacteria|p__Proteobacteria|c__Alphaproteobacteria|o__|f__|g__,1,0.6111111111111112,0.004161813437000957,0.0029417662404287778,Fall core only
+d__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__A21b|f__|g__,0.8888888888888888,0.4444444444444444,6.09469977397561e-4,0.0018471463768814365,Fall core only
+d__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Burkholderiales|f__Comamonadaceae|g__,1,1,0.019300180060449857,0.022011164701386365,Shared core
+d__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Burkholderiales|f__Comamonadaceae|g__Limnobacter,1,0.2222222222222222,0.0011225899850134454,4.745054132297509e-4,Fall core only
+d__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Burkholderiales|f__Oxalobacteraceae|g__,1,0.6666666666666666,0.004875430986437927,0.007977154147384313,Fall core only
+d__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Burkholderiales|f__|g__,1,0.6111111111111112,0.002823575017122791,0.007538618374179485,Fall core only
+d__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Nitrosomonadales|f__Nitrosomonadaceae|g__Nitrosospira,1,0.6111111111111112,0.0019771748407704853,0.0032499095092166494,Fall core only
+d__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Rhodocyclales|f__Rhodocyclaceae|g__,1,0,0.0011797126346181843,0,Fall core only
+d__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Rhodocyclales|f__Rhodocyclaceae|g__Azoarcus,1,0.6666666666666666,0.002515781329792973,0.007500917367757609,Fall core only
+d__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__Rhodocyclales|f__Rhodocyclaceae|g__Denitromonas,0.9444444444444444,0,6.495286983506138e-4,0,Fall core only
+d__Bacteria|p__Proteobacteria|c__Betaproteobacteria|o__|f__|g__,1,0.8333333333333334,0.023618007022673106,0.013831392777884016,Shared core
+d__Bacteria|p__Proteobacteria|c__Deltaproteobacteria|o__Myxococcales|f__Cystobacteraceae|g__,1,0.8888888888888888,0.006787269189219302,0.01157371111201469,Shared core
+d__Bacteria|p__Proteobacteria|c__Deltaproteobacteria|o__Myxococcales|f__Cystobacteraceae|g__Cystobacter,1,0.3333333333333333,0.0021231220519265584,0.002488236441974609,Fall core only
+d__Bacteria|p__Proteobacteria|c__Deltaproteobacteria|o__Myxococcales|f__Nannocystaceae|g__Nannocystis,0.9444444444444444,0,0.001592260498473004,0,Fall core only
+d__Bacteria|p__Proteobacteria|c__Deltaproteobacteria|o__Myxococcales|f__Polyangiaceae|g__,1,0.3333333333333333,0.004644956931158233,0.0027563615669520683,Fall core only
+d__Bacteria|p__Proteobacteria|c__Deltaproteobacteria|o__Myxococcales|f__Polyangiaceae|g__Aetherobacter,1,0.2777777777777778,0.0019884104454412225,0.001986683460593145,Fall core only
+d__Bacteria|p__Proteobacteria|c__Deltaproteobacteria|o__Myxococcales|f__Polyangiaceae|g__Polyangium,1,0.1111111111111111,9.301192743587921e-4,3.030370281066204e-4,Fall core only
+d__Bacteria|p__Proteobacteria|c__Deltaproteobacteria|o__Myxococcales|f__|g__,1,0.2777777777777778,0.004002896046363956,7.279651236495653e-4,Fall core only
+d__Bacteria|p__Proteobacteria|c__Deltaproteobacteria|o__|f__|g__,1,0.2222222222222222,0.0012912664611487658,4.857030077331169e-4,Fall core only
+d__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Alteromonadales|f__|g__,1,1,0.00238384518583661,0.016846091557327265,Shared core
+d__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Legionellales|f__Legionellaceae|g__Legionella,0.9444444444444444,0.3888888888888889,5.239391144881807e-4,0.0012472256915681118,Fall core only
+d__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Oceanospirillales|f__Halomonadaceae|g__Halomonas,0.8888888888888888,0,2.301120005586353e-4,0,Fall core only
+d__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Xanthomonadales|f__Xanthomonadaceae|g__,1,0.3888888888888889,0.0024351601265590953,0.002029108024781625,Fall core only
+d__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Xanthomonadales|f__Xanthomonadaceae|g__Arenimonas,0.9444444444444444,0.5,0.0013911569902793322,0.0034013718769803198,Fall core only
+d__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Xanthomonadales|f__Xanthomonadaceae|g__Lysobacter,1,0.7222222222222222,0.002169573157913567,0.005873984424549324,Fall core only
+d__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__Xanthomonadales|f__Xanthomonadaceae|g__Thermomonas,0.9444444444444444,0.1111111111111111,0.0010821460400814008,5.264441163065538e-4,Fall core only
+d__Bacteria|p__Proteobacteria|c__Gammaproteobacteria|o__|f__|g__,1,1,0.010323938118026068,0.022746918322852198,Shared core
+d__Bacteria|p__Proteobacteria|c__Zetaproteobacteria|o__Mariprofundales|f__Mariprofundaceae|g__,0.9444444444444444,0.5,0.0013743079577670952,0.001709579084972827,Fall core only
+d__Bacteria|p__Proteobacteria|c__|o__|f__|g__,1,0.7222222222222222,0.00682799695300046,0.004489285257851337,Fall core only
+d__Bacteria|p__TM6|c__SJA-4|o__|f__|g__,0.8888888888888888,0.16666666666666666,3.2763082908737523e-4,3.0493150070458184e-4,Fall core only
+d__Bacteria|p__TM7|c__TM7-1|o__|f__|g__,1,0.5,0.0014240030336589112,0.0024380401185468913,Fall core only
+d__Bacteria|p__Verrucomicrobia|c__Opitutae|o__Opitutales|f__Opitutaceae|g__Opitutus,0.9444444444444444,0.3888888888888889,6.236352659177401e-4,0.0033559917568077953,Fall core only
+d__Bacteria|p__Verrucomicrobia|c__Verrucomicrobiae|o__Verrucomicrobiales|f__Verrucomicrobiaceae|g__,0.9444444444444444,0.16666666666666666,8.966543996805019e-4,2.904803102157599e-4,Fall core only
+d__Bacteria|p__Verrucomicrobia|c__Verrucomicrobiae|o__Verrucomicrobiales|f__Verrucomicrobiaceae|g__Haloferula,0.8333333333333334,0.2222222222222222,0.001341890989104538,0.0011884410576255373,Fall core only
+d__Bacteria|p__Verrucomicrobia|c__[Pedosphaerae]|o__[Pedosphaerales]|f__[Pedosphaeraceae]|g__,1,0.3888888888888889,0.00352027459417502,0.0023680685882703843,Fall core only
+d__Bacteria|p__Verrucomicrobia|c__[Spartobacteria]|o__[Chthoniobacterales]|f__[Chthoniobacteraceae]|g__,0.9444444444444444,0.4444444444444444,0.0013177063501011287,0.001782273585884836,Fall core only
+d__Bacteria|p__Verrucomicrobia|c__[Spartobacteria]|o__[Chthoniobacterales]|f__[Chthoniobacteraceae]|g__Chthoniobacter,0.9444444444444444,0.1111111111111111,5.379387916543137e-4,5.379745565071055e-4,Fall core only
+d__Bacteria|p__Verrucomicrobia|c__[Spartobacteria]|o__[Chthoniobacterales]|f__[Chthoniobacteraceae]|g__DA101,1,0.7222222222222222,0.0015438132412452874,0.005400089682092576,Fall core only
+d__Bacteria|p__Verrucomicrobia|c__[Spartobacteria]|o__[Chthoniobacterales]|f__[Chthoniobacteraceae]|g__OR-59,0.9444444444444444,0.5555555555555556,5.483386374294572e-4,0.0013314266214575065,Fall core only
+d__Bacteria|p__Verrucomicrobia|c__|o__|f__|g__,1,0.7222222222222222,0.00414149534819026,0.005017349674474441,Fall core only
+d__Bacteria|p__|c__|o__|f__|g__,1,1,0.13914394726383364,0.10156109623034715,Shared core
