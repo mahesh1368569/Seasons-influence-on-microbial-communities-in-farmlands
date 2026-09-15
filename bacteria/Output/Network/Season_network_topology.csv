@@ -1,0 +1,11 @@
+"","Fall","Spring"
+"Vertex",6,2
+"Edge",3,1
+"Average_degree",1,1
+"Average_path_length",0.851201251236936,0.881507896635143
+"Network_diameter",1,1
+"Clustering_coefficient",NA,NA
+"Density",0.2,1
+"Heterogeneity",0,0
+"Centralization",0,0
+"Modularity",0.666534821802266,0
