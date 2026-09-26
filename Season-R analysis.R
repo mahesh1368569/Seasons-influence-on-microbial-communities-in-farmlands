@@ -1,11 +1,9 @@
 # ---- Core data handling & manipulation ----
-library(dplyr)
-library(tidyr)
 library(tidyverse)
-library(plyr)
 library(magrittr)
 library(parallel)
 library(reshape2)
+library(rstatix)
 
 # ---- Microbiome data processing ----
 library(phyloseq)
@@ -43,7 +41,6 @@ library(lmerTest)
 library(multcomp)
 library(emmeans)
 library(multcompView)
-library(dplyr)
 library(usethis)
 library(nlMS)
 library(iCAMP)
@@ -183,8 +180,11 @@ rotation_colors <- c("Cotton-Soybean" = "#1B9E77", "Corn-Soybean" = "#D95F02",
 season_colors <- c("Fall" = "#A6761D", "Spring" = "#66A61E")
 
 plot_alpha <- function(data, metric, factor_name, colors){
-  data %>% filter(Measure == metric) %>%
-    ggplot(aes(x = .data[[factor_name]], y = Value, fill = .data[[factor_name]])) +
+  
+  df <- data %>% filter(Measure == metric) %>% drop_na(Value, all_of(factor_name))
+  nlev <- n_distinct(df[[factor_name]])
+  
+  p <- ggplot(df, aes(x = .data[[factor_name]], y = Value, fill = .data[[factor_name]])) +
     geom_boxplot(width = 0.65, outlier.shape = NA, alpha = 0.85) +
     geom_jitter(width = 0.15, alpha = 0.6, size = 2) +
     scale_fill_manual(values = colors) +
@@ -197,18 +197,51 @@ plot_alpha <- function(data, metric, factor_name, colors){
           legend.title = element_text(size = 11),
           legend.text = element_text(size = 10),
           panel.border = element_rect(colour = "black", fill = NA, linewidth = 0.8))
+  
+  if(nlev == 2){
+    p <- p + stat_compare_means(method = "wilcox.test", label = "p.signif",
+                                bracket.size = 0.5, tip.length = 0.02, size = 5)
+  } else {
+    p <- p + stat_compare_means(method = "kruskal.test", label = "p.format",
+                                label.y.npc = "top", size = 4.5)
+  }
+  
+  p
 }
 
 plot_alpha_2factor <- function(data, metric, factor1, factor2, colors){
-  data %>% filter(Measure == metric) %>%
-    ggplot(aes(x = .data[[factor1]], y = Value, fill = .data[[factor2]])) +
+  
+  df <- data %>% filter(Measure == metric) %>% drop_na(Value, all_of(c(factor1, factor2)))
+  
+  valid <- df %>% count(.data[[factor1]], .data[[factor2]]) %>%
+    group_by(.data[[factor1]]) %>%
+    filter(n_distinct(.data[[factor2]]) >= 2, min(n) >= 2) %>%
+    pull(.data[[factor1]]) %>% unique()
+  
+  df_test <- df %>% filter(.data[[factor1]] %in% valid)
+  
+  stat <- if(nrow(df_test) > 0){
+    if(n_distinct(df_test[[factor2]]) == 2){
+      df_test %>% group_by(.data[[factor1]]) %>%
+        wilcox_test(as.formula(paste("Value ~", factor2))) %>%
+        add_significance("p") %>%
+        add_xy_position(x = factor1, dodge = 0.8)
+    } else {
+      df_test %>% group_by(.data[[factor1]]) %>%
+        pairwise_wilcox_test(as.formula(paste("Value ~", factor2)), p.adjust.method = "BH") %>%
+        add_significance("p.adj") %>%
+        add_xy_position(x = factor1, dodge = 0.8)
+    }
+  } else NULL
+  
+  p <- ggplot(df, aes(.data[[factor1]], Value, fill = .data[[factor2]])) +
     geom_boxplot(aes(group = interaction(.data[[factor1]], .data[[factor2]])),
-                 position = position_dodge(width = 0.8), width = 0.65,
-                 outlier.shape = NA, alpha = 0.85) +
+                 position = position_dodge(0.8), width = 0.65, outlier.shape = NA, alpha = 0.85) +
     geom_point(aes(group = .data[[factor2]]),
                position = position_jitterdodge(jitter.width = 0.12, dodge.width = 0.8),
                alpha = 0.6, size = 2) +
     scale_fill_manual(values = colors, drop = FALSE) +
+    scale_y_continuous(expand = expansion(mult = c(0.05, 0.18))) +
     labs(x = str_replace_all(factor1, "_", " "), y = metric,
          fill = str_replace_all(factor2, "_", " ")) +
     theme_minimal(base_size = 12) +
@@ -218,19 +251,51 @@ plot_alpha_2factor <- function(data, metric, factor1, factor2, colors){
           legend.title = element_text(size = 11),
           legend.text = element_text(size = 10),
           panel.border = element_rect(colour = "black", fill = NA, linewidth = 0.8))
+  
+  if(!is.null(stat) && nrow(stat) > 0){
+    lab <- if("p.adj.signif" %in% names(stat)) "p.adj.signif" else "p.signif"
+    p <- p + stat_pvalue_manual(stat, label = lab, hide.ns = TRUE,
+                                tip.length = 0.01, bracket.size = 0.4)
+  }
+  
+  p
 }
 
 plot_alpha_3factor <- function(data, metric, factor1, factor2, facet_factor, colors){
-  data %>% filter(Measure == metric) %>%
-    ggplot(aes(x = .data[[factor1]], y = Value, fill = .data[[factor2]])) +
+  
+  df <- data %>% filter(Measure == metric) %>%
+    drop_na(Value, all_of(c(factor1, factor2, facet_factor)))
+  
+  valid <- df %>% count(.data[[facet_factor]], .data[[factor1]], .data[[factor2]]) %>%
+    group_by(.data[[facet_factor]], .data[[factor1]]) %>%
+    filter(n_distinct(.data[[factor2]]) >= 2, min(n) >= 2) %>%
+    distinct(.data[[facet_factor]], .data[[factor1]])
+  
+  df_test <- df %>% semi_join(valid, by = c(facet_factor, factor1))
+  
+  stat <- if(nrow(df_test) > 0){
+    if(n_distinct(df_test[[factor2]]) == 2){
+      df_test %>% group_by(.data[[facet_factor]], .data[[factor1]]) %>%
+        wilcox_test(as.formula(paste("Value ~", factor2))) %>%
+        add_significance("p") %>%
+        add_xy_position(x = factor1, dodge = 0.8)
+    } else {
+      df_test %>% group_by(.data[[facet_factor]], .data[[factor1]]) %>%
+        pairwise_wilcox_test(as.formula(paste("Value ~", factor2)), p.adjust.method = "BH") %>%
+        add_significance("p.adj") %>%
+        add_xy_position(x = factor1, dodge = 0.8)
+    }
+  } else NULL
+  
+  p <- ggplot(df, aes(.data[[factor1]], Value, fill = .data[[factor2]])) +
     geom_boxplot(aes(group = interaction(.data[[factor1]], .data[[factor2]])),
-                 position = position_dodge(width = 0.8), width = 0.65,
-                 outlier.shape = NA, alpha = 0.85) +
+                 position = position_dodge(0.8), width = 0.65, outlier.shape = NA, alpha = 0.85) +
     geom_point(aes(group = .data[[factor2]]),
                position = position_jitterdodge(jitter.width = 0.12, dodge.width = 0.8),
                alpha = 0.6, size = 2) +
     facet_wrap(as.formula(paste("~", facet_factor))) +
     scale_fill_manual(values = colors, drop = FALSE) +
+    scale_y_continuous(expand = expansion(mult = c(0.05, 0.22))) +
     labs(x = str_replace_all(factor1, "_", " "), y = metric,
          fill = str_replace_all(factor2, "_", " ")) +
     theme_minimal(base_size = 12) +
@@ -239,8 +304,16 @@ plot_alpha_3factor <- function(data, metric, factor1, factor2, facet_factor, col
           axis.title = element_text(size = 12),
           legend.title = element_text(size = 11),
           legend.text = element_text(size = 10),
-          strip.text = element_text(size = 12),
+          strip.text = element_text(size = 12, face = "bold"),
           panel.border = element_rect(colour = "black", fill = NA, linewidth = 0.8))
+  
+  if(!is.null(stat) && nrow(stat) > 0){
+    lab <- if("p.adj.signif" %in% names(stat)) "p.adj.signif" else "p.signif"
+    p <- p + stat_pvalue_manual(stat, label = lab, hide.ns = TRUE,
+                                tip.length = 0.01, bracket.size = 0.4)
+  }
+  
+  p
 }
 
 make_alpha_plots <- function(metric){
@@ -258,7 +331,6 @@ make_alpha_plots <- function(metric){
     year_tillage = plot_alpha_2factor(alpha_dat, metric, "Year", "tillage", tillage_colors),
     year_covercrop = plot_alpha_2factor(alpha_dat, metric, "Year", "cover_crop", covercrop_colors),
     year_rotation = plot_alpha_2factor(alpha_dat, metric, "Year", "Crop_rotation", rotation_colors),
-    year_season = plot_alpha_2factor(alpha_dat, metric, "Year", "Season", season_colors),
     
     tillage_covercrop = plot_alpha_2factor(alpha_dat, metric, "tillage", "cover_crop", covercrop_colors),
     tillage_rotation = plot_alpha_2factor(alpha_dat, metric, "tillage", "Crop_rotation", rotation_colors),
@@ -304,6 +376,7 @@ make_alpha_plots <- function(metric){
   
   plots
 }
+
 
 
 #------------------------------------------------------------

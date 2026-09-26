@@ -79,6 +79,391 @@ meco_dataset$cal_abund()
 meco_dataset$cal_alphadiv()
 meco_dataset$cal_betadiv()
 
+
+# ------------------------------------------------------------
+# Metadata factor levels
+# ------------------------------------------------------------
+
+meco_dataset$sample_table <- meco_dataset$sample_table %>%
+  mutate(
+    Year = factor(Year, levels = c("2020", "2021")),
+    farm = factor(farm, levels = c("SCH", "ROB", "KIN", "EVA", "OGL", "BRE")),
+    tillage = factor(tillage, levels = c("Min Till", "Conv Till")),
+    cover_crop = factor(cover_crop, levels = c("CC-mix", "no CC")),
+    Crop_rotation = factor(Crop_rotation,
+                           levels = c("Cotton-Soybean", "Corn-Soybean",
+                                      "Soybean-Corn", "Soybean-Soybean")),
+    Season = factor(Season, levels = c("Fall", "Spring"))
+  )
+
+# ------------------------------------------------------------
+# Colors
+# ------------------------------------------------------------
+
+year_colors <- c("2020" = "#0072B2", "2021" = "#E69F00")
+farm_colors <- c("SCH" = "#0072B2", "ROB" = "#E69F00", "KIN" = "#009E73",
+                 "EVA" = "#CC79A7", "OGL" = "#D55E00", "BRE" = "#56B4E9")
+tillage_colors <- c("Min Till" = "#009E73", "Conv Till" = "#D55E00")
+covercrop_colors <- c("CC-mix" = "#6A3D9A", "no CC" = "#FDBF6F")
+rotation_colors <- c("Cotton-Soybean" = "#1B9E77", "Corn-Soybean" = "#D95F02",
+                     "Soybean-Corn" = "#7570B3", "Soybean-Soybean" = "#E7298A")
+season_colors <- c("Fall" = "#A6761D", "Spring" = "#66A61E")
+
+factor_colors <- list(
+  Year = year_colors,
+  farm = farm_colors,
+  tillage = tillage_colors,
+  cover_crop = covercrop_colors,
+  Crop_rotation = rotation_colors,
+  Season = season_colors
+)
+
+# Output folders
+alpha_out <- "Output/alpha"
+beta_out <- "Output/beta"
+
+dir.create(alpha_out, recursive = TRUE, showWarnings = FALSE)
+dir.create(beta_out, recursive = TRUE, showWarnings = FALSE)
+
+
+# ============================================================
+# ALPHA DIVERSITY
+# ============================================================
+
+alpha_obj <- trans_alpha$new(dataset = meco_dataset)
+
+alpha_dat <- alpha_obj$data_alpha %>%
+  as_tibble() %>%
+  mutate(
+    Year = factor(Year, levels = c("2020", "2021")),
+    farm = factor(farm, levels = c("SCH", "ROB", "KIN", "EVA", "OGL", "BRE")),
+    tillage = factor(tillage, levels = c("Min Till", "Conv Till")),
+    cover_crop = factor(cover_crop, levels = c("CC-mix", "no CC")),
+    Crop_rotation = factor(Crop_rotation,
+                           levels = c("Cotton-Soybean", "Corn-Soybean",
+                                      "Soybean-Corn", "Soybean-Soybean")),
+    Season = factor(Season, levels = c("Fall", "Spring"))
+  )
+
+plot_alpha <- function(data, metric, factor_name, colors){
+  
+  df <- data %>%
+    filter(Measure == metric) %>%
+    drop_na(Value, all_of(factor_name))
+  
+  nlev <- n_distinct(df[[factor_name]])
+  
+  p <- ggplot(df, aes(.data[[factor_name]], Value,
+                      fill = .data[[factor_name]])) +
+    geom_boxplot(width = 0.65, outlier.shape = NA, alpha = 0.85) +
+    geom_jitter(width = 0.15, alpha = 0.6, size = 2) +
+    scale_fill_manual(values = colors) +
+    labs(
+      x = str_replace_all(factor_name, "_", " "),
+      y = metric,
+      fill = str_replace_all(factor_name, "_", " ")
+    ) +
+    scale_y_continuous(expand = expansion(mult = c(0.05, 0.15))) +
+    theme_minimal(base_size = 12) +
+    theme(
+      axis.text.x = element_text(angle = 35, hjust = 1, size = 11),
+      axis.text.y = element_text(size = 11),
+      axis.title = element_text(size = 12),
+      panel.border = element_rect(colour = "black", fill = NA, linewidth = 0.8)
+    )
+  
+  if(nlev == 2){
+    p + stat_compare_means(
+      method = "wilcox.test",
+      label = "p.signif",
+      bracket.size = 0.5,
+      tip.length = 0.02,
+      size = 5
+    )
+  } else {
+    p + stat_compare_means(
+      method = "kruskal.test",
+      label = "p.format",
+      label.y.npc = "top",
+      size = 4.5
+    )
+  }
+}
+
+
+plot_alpha_2factor <- function(data, metric, factor1, factor2, colors){
+  
+  df <- data %>%
+    filter(Measure == metric) %>%
+    drop_na(Value, all_of(c(factor1, factor2)))
+  
+  valid <- df %>%
+    count(.data[[factor1]], .data[[factor2]]) %>%
+    group_by(.data[[factor1]]) %>%
+    filter(n_distinct(.data[[factor2]]) >= 2, min(n) >= 2) %>%
+    pull(.data[[factor1]]) %>%
+    unique()
+  
+  df_test <- df %>% filter(.data[[factor1]] %in% valid)
+  
+  stat <- if(nrow(df_test) > 0){
+    if(n_distinct(df_test[[factor2]]) == 2){
+      df_test %>%
+        group_by(.data[[factor1]]) %>%
+        wilcox_test(as.formula(paste("Value ~", factor2))) %>%
+        add_significance("p") %>%
+        add_xy_position(x = factor1, dodge = 0.8)
+    } else {
+      df_test %>%
+        group_by(.data[[factor1]]) %>%
+        pairwise_wilcox_test(
+          as.formula(paste("Value ~", factor2)),
+          p.adjust.method = "BH"
+        ) %>%
+        add_significance("p.adj") %>%
+        add_xy_position(x = factor1, dodge = 0.8)
+    }
+  } else NULL
+  
+  p <- ggplot(df, aes(.data[[factor1]], Value,
+                      fill = .data[[factor2]])) +
+    geom_boxplot(
+      aes(group = interaction(.data[[factor1]], .data[[factor2]])),
+      position = position_dodge(0.8),
+      width = 0.65,
+      outlier.shape = NA,
+      alpha = 0.85
+    ) +
+    geom_point(
+      aes(group = .data[[factor2]]),
+      position = position_jitterdodge(
+        jitter.width = 0.12,
+        dodge.width = 0.8
+      ),
+      alpha = 0.6,
+      size = 2
+    ) +
+    scale_fill_manual(values = colors, drop = FALSE) +
+    scale_y_continuous(expand = expansion(mult = c(0.05, 0.18))) +
+    labs(
+      x = str_replace_all(factor1, "_", " "),
+      y = metric,
+      fill = str_replace_all(factor2, "_", " ")
+    ) +
+    theme_minimal(base_size = 12) +
+    theme(
+      axis.text.x = element_text(angle = 35, hjust = 1),
+      panel.border = element_rect(colour = "black", fill = NA, linewidth = 0.8)
+    )
+  
+  if(!is.null(stat) && nrow(stat) > 0){
+    lab <- if("p.adj.signif" %in% names(stat)) "p.adj.signif" else "p.signif"
+    
+    p <- p + stat_pvalue_manual(
+      stat,
+      label = lab,
+      hide.ns = TRUE,
+      tip.length = 0.01,
+      bracket.size = 0.4
+    )
+  }
+  
+  p
+}
+
+make_alpha_plots <- function(metric){
+  
+  plots <- list(
+    
+    # Single factors
+    year = plot_alpha(alpha_dat, metric, "Year", year_colors),
+    tillage = plot_alpha(alpha_dat, metric, "tillage", tillage_colors),
+    covercrop = plot_alpha(alpha_dat, metric, "cover_crop", covercrop_colors),
+    rotation = plot_alpha(alpha_dat, metric, "Crop_rotation", rotation_colors),
+    season = plot_alpha(alpha_dat, metric, "Season", season_colors),
+    
+    # Two factors
+    year_tillage = plot_alpha_2factor(alpha_dat, metric, "Year", "tillage", tillage_colors),
+    year_covercrop = plot_alpha_2factor(alpha_dat, metric, "Year", "cover_crop", covercrop_colors),
+    year_rotation = plot_alpha_2factor(alpha_dat, metric, "Year", "Crop_rotation", rotation_colors),
+    
+    tillage_covercrop = plot_alpha_2factor(alpha_dat, metric, "tillage", "cover_crop", covercrop_colors),
+    tillage_rotation = plot_alpha_2factor(alpha_dat, metric, "tillage", "Crop_rotation", rotation_colors),
+    tillage_season = plot_alpha_2factor(alpha_dat, metric, "tillage", "Season", season_colors),
+    
+    covercrop_rotation = plot_alpha_2factor(alpha_dat, metric, "cover_crop", "Crop_rotation", rotation_colors),
+    covercrop_season = plot_alpha_2factor(alpha_dat, metric, "cover_crop", "Season", season_colors),
+    
+    rotation_season = plot_alpha_2factor(alpha_dat, metric, "Crop_rotation", "Season", season_colors)
+  )
+  
+  metric_dir <- file.path(alpha_out, metric)
+  dir.create(metric_dir, recursive = TRUE, showWarnings = FALSE)
+  
+  iwalk(
+    plots,
+    ~ggsave(
+      file.path(metric_dir, paste0(tolower(metric), "_", .y, ".pdf")),
+      plot = .x,
+      width = 8,
+      height = 6
+    )
+  )
+  
+  pdf(
+    file.path(alpha_out, paste0(metric, "_all_plots.pdf")),
+    width = 8,
+    height = 6
+  )
+  
+  walk(plots, print)
+  dev.off()
+  
+  plots
+}
+
+shannon_plots <- make_alpha_plots("Shannon")
+chao1_plots <- make_alpha_plots("Chao1")
+simpson_plots <- make_alpha_plots("Simpson")
+
+write_csv(alpha_dat, file.path(alpha_out, "fungi_alpha_diversity_long.csv"))
+
+# ============================================================
+# BETA DIVERSITY
+# ============================================================
+
+bray_mat <- meco_dataset$beta_diversity$bray
+bray_dist <- as.dist(bray_mat)
+
+meta_beta <- meco_dataset$sample_table %>%
+  as.data.frame()
+
+meta_beta$SampleID <- rownames(meta_beta)
+
+pcoa_fit <- ape::pcoa(bray_dist)
+
+beta_dat <- pcoa_fit$vectors[, 1:2] %>%
+  as.data.frame() %>%
+  rownames_to_column("SampleID") %>%
+  rename(PCoA1 = Axis.1, PCoA2 = Axis.2) %>%
+  left_join(meta_beta, by = "SampleID")
+
+pcoa_var <- round(pcoa_fit$values$Relative_eig[1:2] * 100, 1)
+
+pcoa_var
+
+plot_beta <- function(data, factor_name, colors){
+  ggplot(data, aes(PCoA1, PCoA2, color = .data[[factor_name]], fill = .data[[factor_name]])) +
+    stat_ellipse(aes(group = .data[[factor_name]]), geom = "polygon", level = 0.95,
+                 alpha = 0.35, linewidth = 0.8, show.legend = FALSE) +
+    geom_point(size = 3.5, alpha = 0.9) +
+    scale_color_manual(values = colors) +
+    scale_fill_manual(values = colors) +
+    labs(x = paste0("PCoA1 (", pcoa_var[1], "%)"),
+         y = paste0("PCoA2 (", pcoa_var[2], "%)"),
+         color = str_replace_all(factor_name, "_", " "),
+         fill = str_replace_all(factor_name, "_", " ")) +
+    theme_bw(base_size = 13) +
+    theme(panel.border = element_rect(colour = "black", fill = NA),
+          legend.title = element_text(size = 11),
+          legend.text = element_text(size = 10))
+}
+
+beta_single <- list(
+  year = plot_beta(beta_dat, "Year", year_colors),
+  farm = plot_beta(beta_dat, "farm", farm_colors),
+  tillage = plot_beta(beta_dat, "tillage", tillage_colors),
+  covercrop = plot_beta(beta_dat, "cover_crop", covercrop_colors),
+  rotation = plot_beta(beta_dat, "Crop_rotation", rotation_colors),
+  season = plot_beta(beta_dat, "Season", season_colors)
+)
+
+iwalk(
+  beta_single,
+  ~ggsave(
+    file.path(beta_out, paste0("PCoA_Bray_", .y, ".pdf")),
+    plot = .x,
+    width = 8,
+    height = 6
+  )
+)
+
+plot_beta_2factor <- function(data, factor1, factor2, colors){
+  ggplot(data, aes(PCoA1, PCoA2,
+                   color = .data[[factor1]],
+                   fill = .data[[factor1]],
+                   shape = .data[[factor2]])) +
+    stat_ellipse(aes(group = .data[[factor1]]), geom = "polygon", level = 0.95,
+                 alpha = 0.35, linewidth = 0.8, show.legend = FALSE) +
+    geom_point(size = 3.5, alpha = 0.9) +
+    scale_color_manual(values = colors) +
+    scale_fill_manual(values = colors) +
+    labs(x = paste0("PCoA1 (", pcoa_var[1], "%)"),
+         y = paste0("PCoA2 (", pcoa_var[2], "%)"),
+         color = str_replace_all(factor1, "_", " "),
+         fill = str_replace_all(factor1, "_", " "),
+         shape = str_replace_all(factor2, "_", " ")) +
+    theme_bw(base_size = 13) +
+    theme(panel.border = element_rect(colour = "black", fill = NA),
+          legend.title = element_text(size = 11),
+          legend.text = element_text(size = 10))
+}
+
+beta_pairs <- list(
+  season_tillage = plot_beta_2factor(beta_dat, "Season", "tillage", season_colors),
+  season_covercrop = plot_beta_2factor(beta_dat, "Season", "cover_crop", season_colors),
+  season_rotation = plot_beta_2factor(beta_dat, "Season", "Crop_rotation", season_colors),
+  
+  tillage_covercrop = plot_beta_2factor(beta_dat, "tillage", "cover_crop", tillage_colors),
+  tillage_rotation = plot_beta_2factor(beta_dat, "tillage", "Crop_rotation", tillage_colors),
+  
+  covercrop_rotation = plot_beta_2factor(beta_dat, "cover_crop", "Crop_rotation", covercrop_colors),
+  
+  year_tillage = plot_beta_2factor(beta_dat, "Year", "tillage", year_colors),
+  year_covercrop = plot_beta_2factor(beta_dat, "Year", "cover_crop", year_colors),
+  year_rotation = plot_beta_2factor(beta_dat, "Year", "Crop_rotation", year_colors)
+)
+
+iwalk(
+  beta_pairs,
+  ~ggsave(
+    file.path(beta_out, paste0("PCoA_Bray_", .y, ".pdf")),
+    plot = .x,
+    width = 8,
+    height = 6
+  )
+)
+
+run_permanova <- function(variable){
+  
+  form <- as.formula(paste("bray_dist ~", variable))
+  
+  vegan::adonis2(
+    form,
+    data = meta_beta,
+    permutations = 9999,
+    by = "margin"
+  ) %>%
+    as.data.frame() %>%
+    rownames_to_column("Term") %>%
+    mutate(Factor = variable, .before = 1)
+}
+
+permanova_single <- map_dfr(
+  c("Year", "farm", "tillage", "cover_crop", "Crop_rotation", "Season"),
+  run_permanova
+)
+
+
+write_csv(
+  permanova_single,
+  file.path(beta_out, "PERMANOVA_single_factors.csv")
+)
+
+
+
+
+
 ##Abundance anaysis
 abun = trans_abund$new(dataset = meco_dataset, taxrank = "Phylum", ntaxa = 15, groupmean = "Season")
 
